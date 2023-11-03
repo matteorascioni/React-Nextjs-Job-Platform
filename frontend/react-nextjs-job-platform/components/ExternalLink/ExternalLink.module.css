@@ -1,0 +1,13 @@
+.link {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    text-decoration: underline;
+    color: var(--crimson-red);
+}
+
+@media (pointer: fine) {
+    .link:hover {
+        transition: var(--transition-default-timing) var(--transition-default-easing);
+        color: var(--dark-red);
+    }
+}

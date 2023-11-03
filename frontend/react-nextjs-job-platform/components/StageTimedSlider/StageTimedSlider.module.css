@@ -1,0 +1,152 @@
+/* Container */
+.container {
+    position: relative;
+    overflow-y: hidden;
+    /* Padding .grid-full-width class reset because the chrome 99 version */
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* Slider */
+
+
+.container :global(.sliderItem) {
+    justify-content: flex-start !important;
+}
+
+.container :global(.sliderNavigationAndControls) {
+    position: absolute;
+    height: auto;
+    top: var(--spacing5);
+    /* Adding the padding because the chrome 99 version */
+    padding-left: var(--grid-outer-margin);
+    padding-right: var(--grid-outer-margin);
+}
+
+.container :global(.sliderNavigationAndControls) button {
+    display: none;
+}
+
+.container :global(.sliderNavigation) {
+    justify-content: space-between;
+    background-color: var(--white);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.container :global(.sliderNavigation) > li {
+    font-weight: var(--heavy);
+    padding: var(--spacing) var(--spacing2);
+    color: var(--black);
+}
+
+/*
+    Adding the padding based on the starting point 1680px inside the grid-css,
+    inside the .grid-full-width class because the chrome 99 version
+*/
+@media (min-width: 768px) {
+    .container,
+    .container > div {
+        height: inherit;
+    }
+
+    .container  {
+        display: flex;
+        justify-content: center;
+    }
+
+    .container :global(.sliderNavigationAndControls) {
+        justify-content: center;
+        height: inherit;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        z-index: unset !important;
+    }
+
+    .container :global(.sliderNavigationAndControls) button {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 50%;
+        transform: translateY(-50%) translateX(50%);
+        bottom: inherit;
+        background-color: inherit;
+        box-shadow: inherit;
+    }
+
+    .container :global(.sliderNavigationAndControls) button:first-child {
+        right: calc(50% - (var(--grid-column-width) * 2) + var(--spacing));
+    }
+
+    .container :global(.sliderNavigationAndControls) button:nth-child(2) {
+        right: calc(50% - (var(--grid-column-width) * 3) - var(--spacing2));
+    }
+
+    .container :global(.sliderNavigationAndControls) button > svg {
+        width: 40px;
+        height: 40px;
+        margin-right: 0;
+    } 
+    
+    .container :global(.sliderNavigationAndControls) button > svg > path {
+        fill: var(--crimson-red);
+    }
+
+    .container :global(.sliderNavigation) {
+        top: 0;
+        padding-bottom: 0;
+        bottom: unset;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        background-color: var(--white);
+    }
+
+    .container :global(.bulletLabels) {
+        justify-content: center !important;
+    }
+}
+
+@media (max-width: 1279px) {
+    .container :global(.sliderNavigationAndControls) {
+        width: 100%;
+        padding-left: calc(var(--grid-outer-margin) - var(--spacing));
+    }
+}
+
+@media (min-width: 1280px) {
+    .container :global(.sliderNavigation) {
+        width: calc((var(--grid-column-width) + var(--grid-gap)) * 10 - var(--spacing4));
+        max-width: calc((var(--grid-column-width) + var(--grid-gap)) * 10 - var(--spacing4));
+        margin-top: 0;
+        padding: 0;
+        margin-left: var(--grid-gap);
+    }
+
+    .container :global(.sliderNavigationAndControls) button:first-child {
+        right: calc(50% - (var(--grid-column-width) * 4) + var(--spacing2));
+    }
+
+    .container :global(.sliderNavigationAndControls) button:nth-child(2) {
+        right: calc(50% - (var(--grid-column-width) * 5) - var(--spacing5));
+    }
+}
+
+@media (min-width: 1500px) {
+    .content {
+        margin-left: calc((var(--grid-column-width) + var(--grid-gap)) * 2);
+    }
+
+    .container :global(.sliderNavigation) {
+        width: calc((var(--grid-column-width) + var(--grid-gap)) * 8 - var(--spacing4));
+        max-width: calc((var(--grid-column-width) + var(--grid-gap)) * 8 - var(--spacing4));
+        margin-left: calc((var(--grid-column-width) * 2) - var(--grid-gap));
+    }
+
+    .container :global(.sliderNavigationAndControls) button:first-child {
+        right: calc(50% - (var(--grid-column-width) * 2) + var(--spacing3));
+    }
+
+    .container :global(.sliderNavigationAndControls) button:nth-child(2) {
+        right: calc(50% - (var(--grid-column-width) * 3) - var(--spacing2));
+    }
+}

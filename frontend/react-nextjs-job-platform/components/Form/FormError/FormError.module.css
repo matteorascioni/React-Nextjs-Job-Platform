@@ -1,0 +1,5 @@
+.container {
+    color: var(--crimson-red);
+    margin-top: 4px;
+    margin-bottom: var(--spacing)
+}

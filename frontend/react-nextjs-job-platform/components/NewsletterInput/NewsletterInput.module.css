@@ -1,0 +1,69 @@
+/* Paragraph */
+.paragraph {
+    font-weight: var(--heavy);
+    margin-bottom: var(--spacing2);
+    color: var(--white);
+}
+
+/* Input */
+.input {
+    height: 44px;
+    border: 1px solid transparent;
+    padding-left: var(--spacing3);
+    padding-right: var(--spacing2);
+    outline: none;
+}
+
+/* Button Container */
+.buttonContainer {
+    display: flex;
+    margin-bottom: var(--spacing4);
+}
+
+/* Button */
+.button {
+    width: 100%;
+}
+
+@media (max-width: 767px) {
+    /* Input */
+    .input {
+        width: 100%;
+        margin-bottom: var(--spacing2);
+    }
+}
+
+@media (min-width: 768px) {
+    /* Input and Button Container */
+    .inputAndButtonContainer {
+        display: flex;
+    }
+
+    /* Button Container */
+    .buttonContainer {
+        margin-bottom: 0;
+    }
+
+    /* Button */
+    .button {
+        padding-left: var(--spacing3);
+        padding-right: var(--spacing3);
+        border-bottom-left-radius: 0px;
+        border-top-left-radius: 0px;
+    }
+}
+
+@media (min-width: 1280px) {
+    /* Paragraph */
+    .paragraph {
+        margin-bottom: var(--spacing3);
+    }
+}
+
+@media (pointer: fine) {
+    .button:hover {
+        background: var(--crimson-red);
+        color: var(--white);
+        border: 1px solid transparent;
+    }
+}

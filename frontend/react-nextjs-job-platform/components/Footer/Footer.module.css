@@ -1,0 +1,200 @@
+.container {
+    padding-top: var(--spacing6);
+    padding-bottom: var(--spacing4);
+    background-color: var(--black);
+}
+/* Headline */
+.headline {
+    margin-bottom: var(--spacing3);
+    color: var(--crimson-red);
+}
+
+/* Contact and Map Container */
+.contactAndMapContainer {
+    margin-bottom: var(--spacing6);
+}
+
+/* Contact List */
+.contactList {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: var(--spacing2);
+}
+
+/* Contact Item */
+.contactItem {
+    display: block;
+    margin-bottom: var(--spacing2);
+    color: var(--white);
+}
+
+/* Link */
+.link {
+    color: var(--crimson-red);
+}
+
+/* Map Container */
+.mapContainer {
+    height: 250px;
+    border: 1px solid var(--crimson-red);
+}
+
+/* Newsletter Container and social Icons  */
+.newsletterContainerAndSocialIcons {
+    padding-bottom: var(--spacing3);
+    border-bottom: 1px solid var(--white);
+}
+
+/* Social Icon Container */
+.socialIconContainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Icon */
+.icon, 
+.icon > svg {
+    width: 36px;
+    height: 36px;
+    max-width: 36px;
+    max-height: 36px;
+}
+
+.icon > svg {
+    padding: var(--spacing);
+}
+
+/* Copyright Container */
+.copyrightContainer {
+    margin-top: var(--spacing2);
+    color: var(--white);
+}
+
+/* Copyright Headline */
+.copyrightHeadline {
+    display: block;
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+}
+
+@media (min-width: 768px) {
+    /* Contact and Map Container */
+    .contactAndMapContainer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* Contact List */
+    .contactList {
+        margin-bottom: 0;
+        justify-content: flex-start;
+    }
+
+    /* Contact Item */
+    .contactItem {
+        margin-bottom: var(--spacing2);
+    }
+
+    /* Newsletter Container and social Icons  */
+    .newsletterContainerAndSocialIcons {
+        padding-bottom: var(--spacing5);
+    }
+
+    /* Newsletter Button Container */
+    .newsletterButtonContainer {
+        margin-bottom: 0;
+    }
+
+    /* Social Icon Container */
+    .socialIconContainer {
+        justify-content: flex-end;
+    }
+
+    /* Icon */
+    .icon {
+        margin-left: var(--spacing7);
+    }
+
+    .icon, 
+    .icon > svg {
+        width: 40px;
+        height: 40px;
+        max-width: 40px;
+        max-height: 40px;
+    }
+
+    /* Copyright Container */
+    .copyrightContainer {
+        margin-top: var(--spacing3);
+    }
+}
+
+@media (min-width: 1280px) {
+    .content > div {
+        display: flex;
+    }
+
+    /* Contact and Map Container */
+    .contactAndMapContainer {
+        padding-bottom: var(--spacing4);
+        margin-bottom: 0;
+        border-bottom: 1px solid var(--crimson-red);
+    }
+
+    /* Contact List */
+    .contactList {
+        margin-bottom: 0;
+    }
+
+    /* Newsletter And Social Icons */
+    .newsletterContainerAndSocialIcons {
+        border-bottom: 1px solid var(--crimson-red);
+        padding-left: var(--grid-gap);
+    }
+
+    /* Social Icon Container */
+    .socialIconContainer {
+        padding-top: var(--spacing6);
+    }
+
+
+    /* Copyright Container */
+    .copyrightContainer {
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1500px) {
+    /* Contact and Map Container */
+    .contactAndMapContainer {
+        justify-content: inherit;
+    }
+
+    /* Copyright Container */
+    .copyrightContainer {
+        justify-content: flex-start;
+    }
+
+    /* Icon */
+    .icon, 
+    .icon > svg {
+        width: 46px;
+        height: 46px;
+        max-width: 46px;
+        max-height: 46px;
+    }
+}
+
+@media (pointer: fine) {
+    .icon:hover {
+        cursor: pointer;
+        transition: var(--transition-default-timing) var(--transition-default-easing);
+    }
+
+    .icon:hover > svg > path {
+        fill: var(--crimson-red);
+        transition: var(--transition-default-timing) var(--transition-default-easing);
+    } 
+}

@@ -1,0 +1,136 @@
+/* Container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding-top: var(--spacing4);
+    padding-bottom: var(--spacing6);
+    background-color: var(--mine-shaft);
+}
+
+/* Content */
+.content {
+    padding-top: var(--spacing4);
+    padding-bottom: var(--spacing6);
+    padding-right: var(--spacing);
+    padding-left: var(--spacing);
+    background-color: var(--black);
+}
+
+/* Headline */
+.headline {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    font-weight: var(--heavy);
+    margin-bottom: var(--spacing3);
+    color: var(--crimson-red);
+}
+
+/* Label */
+.label {
+    display: block;
+    font-weight: var(--heavy);
+    margin-bottom: var(--spacing);
+    color: var(--white);
+}
+
+/* emailInput */
+.emailInput {
+    width: 100%;
+    height: 46px;
+    padding-left: var(--spacing);
+    margin-bottom: var(--spacing2);
+}
+
+/* passwordInput */
+.passwordInput {
+    width: 100%;
+    height: 46px;
+    padding-left: var(--spacing);
+    margin-bottom: var(--spacing3);
+}
+
+/* Button */
+.button {
+    display: block;
+    margin-bottom: var(--spacing4);
+}
+
+/* Divider */
+.divider {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-weight: var(--medium);
+    margin-bottom: var(--spacing);
+    color: var(--white);
+}
+
+/* Google Button */
+.googleButton {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--mine-shaft);
+}
+
+/* Google Icon */
+.googleIcon {
+    max-width: 22px;
+    max-height: 22px;
+    min-width: 22px;
+    min-height: 22px;
+    width: 22px;
+    height: 22px;
+    margin-right: var(--spacing);
+}
+
+@media (min-width: 375px) {
+    /* Content */
+    .content {
+        padding-right: var(--spacing3);
+        padding-left: var(--spacing3);
+    }
+}
+
+@media (min-width: 768px) {
+    /* Container */
+    .container {
+        padding-bottom: var(--spacing7);
+    }
+
+    /* Headline */
+    .headline {
+        line-height: 4.5rem;
+        font-size: 4rem;
+    }
+
+    /* emailInput */
+    .emailInput,
+    .passwordInput {
+        margin-bottom: var(--spacing3);
+    }
+
+    /* Divider */
+    .divider {
+        margin-bottom: var(--spacing2);
+    }
+}
+
+@media (min-width: 1280px) {
+    /* Container */ 
+    .container {
+        padding-top: var(--spacing8);
+        padding-bottom: var(--spacing9);
+    }
+
+    /* Headline */
+    .headline {
+        font-size: 5rem;
+        line-height: 5.5rem;
+    }
+}

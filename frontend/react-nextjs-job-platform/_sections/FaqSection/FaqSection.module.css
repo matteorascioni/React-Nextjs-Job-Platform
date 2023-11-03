@@ -1,0 +1,105 @@
+/* Layouts */
+/* Mobile */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: var(--spacing6);
+    padding-bottom: var(--spacing4);
+}
+
+/* Headline */
+.headline {
+    margin-bottom: var(--spacing2);
+    font-size: 3rem;
+    line-height: 3.5rem;
+    font-weight: var(--heavy);
+    color: var(--crimson-red);
+}
+
+/* Paragraph */
+.paragraph {
+    font-weight: var(--medium);
+    margin-bottom: var(--spacing3);
+    white-space: break-word;
+}
+
+/* Subtitle and SubContent */
+.subtitle {
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    margin-bottom: var(--spacing);
+}
+
+.subContent {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    margin-bottom: var(--spacing3);
+}
+
+.subtitle,
+.subContent {
+    padding-left: var(--spacing2);
+}
+
+@media (min-width: 768px) {
+    /* Container */
+    .container {
+        padding-bottom: var(--spacing7);
+    }
+
+    /* Headline */
+    .headline {
+        line-height: 4.5rem;
+        font-size: 4rem;
+    }
+
+    /* Paragraph */
+    .paragraph {
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+    }
+
+    /* Subtitle */
+    .subtitle {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+
+    .subContent {
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+    }
+}
+
+@media (min-width: 1280px) {
+    /* Container */
+    .container {
+        padding-top: var(--spacing8);
+        padding-bottom: var(--spacing9);
+    }
+
+    /* Headline */ 
+    .headline {
+        font-size: 5rem;
+        line-height: 5.5rem;
+        margin-bottom: var(--spacing3);
+    }
+
+    /* Paragraph */
+    .paragraph {
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+    }
+
+    /* Subtitle */
+    .subtitle {
+        font: 2.2rem;
+        line-height: 3.2rem;
+    }
+
+    /* SubContent */
+    .subContent {
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+    }
+}

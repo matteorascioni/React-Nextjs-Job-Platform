@@ -1,0 +1,166 @@
+.container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-top: calc(var(--main-navigation-height) + var(--spacing3));
+    padding-bottom: var(--spacing8);
+    background-color: var(--white);
+    color: var;
+    z-index: 300;
+    overflow-y: auto;
+}
+
+/* Content and InputContainer */
+.content,
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputContainer {
+    margin-bottom: var(--spacing3);
+}
+
+/* Icon Container */
+.iconContainer {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--main-navigation-height);
+    margin-bottom: var(--spacing4);
+    background-color: var(--black);
+    z-index: 50px
+}
+
+.iconContainer > div > div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/* Icon Button */ 
+.iconContainer > div > div > button {
+    padding: 0;
+    background-color: transparent;
+}
+
+/* Label */
+.label {
+    font-size: 1.2rem;
+    font-weight: var(--heavy);
+    margin-bottom: var(--spacing);
+    color: var(--black);
+}
+
+/* Input */
+.input { 
+    height: 46px;
+    padding-left: var(--spacing);
+    padding-right: var(--spacing2);
+    border: 1px solid var(--black);
+    outline: none;
+}
+
+/* Textarea Container */
+.textareaContainer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: var(--spacing4);
+}
+
+/* Textarea */
+.textarea {
+    padding: var(--spacing2);
+    height: 300px !important;
+    border: 1px solid var(--black);
+    outline: none;
+}
+
+/* Button Container */
+.buttonContainer {
+    margin-bottom: var(--spacing2);
+}
+
+/* Required Fields */
+.requiredFields {
+    color: var(--black);
+}
+
+@media (min-width: 768px) {
+    .container {
+        display: flex;
+        align-items: center;
+        padding: 0;
+    }
+
+    /* Icon Container */
+    .iconContainer {
+        height: 80px;
+        margin-bottom: 0;
+    }
+
+    /* Icon Button */ 
+    .iconButton {
+        font-size: 4rem;
+    }
+    
+    /* Tablet Content */
+    .tabletContent {
+        display: flex;
+    }
+    
+    /* Textarea Container */
+    .textareaContainer {
+        margin-bottom: 0;
+    }
+
+    /* Submit Button and Required fields */
+    .subimitButtonAndRequiredFields {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (min-width: 768px) and (max-height: 549px) {
+    .content {
+        margin-top: calc(var(--main-navigation-height) * 6 + var(--spacing6));
+        padding-bottom: var(--spacing10);
+    }
+}
+
+@media (min-width: 768px) and (min-height: 550px) and (max-height: 799px) {
+    .content {
+        margin-top: calc(var(--main-navigation-height) * 4 + var(--spacing6));
+        padding-bottom: var(--spacing10);
+    }
+}
+
+@media (min-width: 768px) and (min-height: 800px) {
+    .content {
+        margin-top: calc(var(--main-navigation-height) * 2 + var(--spacing6));
+        padding-bottom: var(--spacing10);
+    }
+}
+
+@media (min-width: 1400px) and (min-height: 600px) {
+    .content {
+        margin-top: calc(var(--main-navigation-height) * 2 + var(--spacing6));
+        padding-bottom: var(--spacing10);
+    }
+}
+
+@media (min-width: 1280px) {
+    .container {
+        padding-top: var(--spacing6);
+    }
+}

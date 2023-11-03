@@ -1,0 +1,160 @@
+.container {
+    padding-top: var(--spacing6);    
+    padding-bottom: var(--spacing8);    
+}
+
+/* Image Container */
+.imageContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: var(--spacing7);
+}
+
+/* Image */
+.image {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 4px solid var(--crimson-red);
+    background-color: var(--mine-shaft);
+}
+
+/* Name */
+.name {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    margin-bottom: var(--spacing4);
+    color: var(--crimson-red);
+}
+
+/* Education Container */
+.educationContainer {
+    margin-bottom: var(--spacing6);
+}
+
+/* Education Headline */
+.educationHeadline {
+    font-size: 2rem;
+    line-height: 2.4rem;
+    margin-bottom: var(--spacing);
+}
+
+/* Education list items */
+.educationListItems {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--spacing2);
+}
+
+/* Education Icon */
+.educationIcon {
+    min-width: 32px;
+    min-height: 32px;
+    width: 32px;
+    height: 32px;
+    max-width: 32px;
+    max-height: 32px;
+    margin-right: var(--spacing2);
+}
+
+/* Hard skills Container */
+.hardSkillsContainer {
+    margin-bottom: var(--spacing6);
+}
+
+/* Soft skills Container */
+.softSkillsContainer {  
+    margin-bottom: var(--spacing9);
+}
+
+/* Question */
+.question {
+    display: block;
+    font-weight: var(--medium);
+    margin-bottom: var(--spacing2);
+}
+
+/* Button Container */
+.buttonContainer {
+    margin-bottom: var(--spacing9);
+}
+
+/* Button */
+.button {
+    display: flex;
+    align-items: center;
+}
+
+/* Calendar Icon */
+.calendarIcon {
+    width: 15px;
+    height: 15px;
+    max-width: 15px;
+    max-height: 15px;
+    margin-left: var(--spacing2);
+}
+
+.calendarIcon path {
+    fill: var(--white);
+}
+
+/* Link */
+.link {
+    display: flex;
+    align-items: center;
+    font-weight: var(--heavy);
+    color: var(--crimson-red);
+    text-decoration: underline;
+    max-width: fit-content;
+}
+
+/* Arrow Icon */
+.arrowIcon {
+    margin-right: var(--spacing);
+}
+
+.arrowIcon path {
+    fill: var(--crimson-red);
+}
+
+@media (min-width: 768px) {
+    /* Name */
+    .name {
+        line-height: 4.5rem;
+        font-size: 4rem;
+    }
+}
+
+@media (min-width: 1280px) {
+    /* ImageContainer */
+    .imageContainer {
+        width: unset;
+        justify-content: inherit;
+    }
+
+    /* Name */
+    .name {
+        font-size: 5rem;
+        line-height: 5.5rem;
+    }
+
+    /* Education Headline */
+    .educationHeadline {
+        font-size: 2.4rem;
+        line-height: 2.8rem;
+    }
+
+    /* Skills Headline */
+    .skillsHeadline {
+        font-size: 2.4rem;
+        line-height: 2.8rem;
+    }
+}
+
+@media (pointer: fine) {
+    .button:hover .calendarIcon path {
+        transition: var(--transition-default-timing) var(--transition-default-easing);
+        fill: var(--crimson-red);
+    }
+}

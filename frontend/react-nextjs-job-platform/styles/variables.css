@@ -1,0 +1,89 @@
+:root {
+  /*fonts*/
+  --sans-serif: "Montserrat", sans-serif;
+  --light: 300;
+  --regular: 400;
+  --roman: 400;
+  --medium: 500;
+  --semibold: 600;
+  --heavy: 800;
+
+
+  /* Color variables */
+  --true-black: #000;
+  --black: #1d1d1b;
+  --white: #ffffff;
+  --light-gray: #d3d3d3;
+  --gray80: #666;
+  --shark: #a7acbd;
+  --slate: #414952;
+  --mine-shaft: #303030;
+  --dark-red: #a20000;
+  --crimson-red: #bf0a22;
+  --form-placeholder-color: var(--shark);
+
+
+  /* Layout variables */
+  --spacing: 8px;
+  --spacing2: 16px;
+  --spacing3: 24px;
+  --spacing4: 32px;
+  --spacing5: 40px;
+  --spacing6: 48px;
+  --spacing7: 56px;
+  --spacing8: 64px;
+  --spacing9: 72px;
+  --spacing10: 80px;
+  --spacing12: 96px;
+  --spacing15: 120px;
+  --spacing16: 128px;
+  --spacing20: 160px;
+  --spacing25: 200px;
+  --max-page-width: 1680px;
+  --overlay-inner-max-width: 88rem;
+  --meta-navigation-height: 4rem;
+  --main-navigation-height: 6.4rem;
+
+  /* Media Queries breakpoints | Attention! CSS Variables won't work in media queries so this is for information foremost */
+  --tablet: 768px;
+  --desktop: 1280px;
+
+  /** Transformations */
+  --transition-default-timing: 200ms;
+  --transition-default-easing: ease-out;
+
+
+  /* Card Box-Shadow */
+  --card-box-shadow: 0 10px 20px rgba(29, 29, 27, 0.2), 0 6px 6px rgba(29, 29, 27, 0.2);
+
+  /** Viewport width and offset **/
+  --viewport-width: calc(100vw - var(--page-scrollbar-width));
+  --viewport-offset: 0px;
+
+}
+
+@media (min-width: 768px) {
+  :root {
+    --main-navigation-height: calc(6.4rem + var(--spacing2));
+  }
+}
+
+@media (min-width: 1280px) {
+  :root {
+    --main-navigation-height: 10rem;
+  }
+}
+
+@media (min-width: 1500px) {
+    :root {
+        --main-navigation-height: 4rem;
+    }
+}
+
+@media (min-width: 1680px) {
+  :root {
+    --viewport-offset: calc(
+      0.5 * (var(--viewport-width) - var(--max-page-width))
+    );
+  }
+}

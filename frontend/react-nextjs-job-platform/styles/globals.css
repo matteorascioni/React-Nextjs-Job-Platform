@@ -1,0 +1,76 @@
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  font-family: var(--sans-serif);
+  font-size: 1.6rem;
+}
+
+body.-disable-scroll {
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  font-weight: var(--medium);
+}
+
+ul {
+  list-style: none;
+}
+
+.full-screen-width {
+  width: calc(100vw - var(--page-scrollbar-width));
+}
+
+.visibly-hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+input {
+  outline: none;
+}
+
+input::placeholder {
+  color: var(--form-placeholder-color);
+}
+
+/* TODO: use this helper class for all occurrences of hidden scrollbars ? */
+.hide-scrollbar {
+  -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Chrome, Safari and Opera */
+}
+
+[data-background-color='gray'] + [data-background-color='gray'],
+[data-background-color='green'] + [data-background-color='green'],
+[data-background-color='orange'] + [data-background-color='orange'] {
+  padding-top: 0 !important;
+}
+
+
+@media (min-width: 768px) {
+  p {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  p {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+}

@@ -1,0 +1,142 @@
+/* Container */
+.container {
+	position: relative;
+	min-height: 90vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+/* Content */
+.content {
+	z-index: 1;
+}
+
+/* Headlines Container */
+.headlinesContainer {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: var(--spacing3);
+}
+
+/* Headline */
+.headline {
+	position: relative;
+	display: block;
+	width: fit-content;
+	font-weight: var(--heavy);
+	font-size: 3rem;
+    line-height: 3.5rem;
+	color: transparent;
+	animation: text_reveal .5s ease forwards;
+	animation-delay: 1s;
+}
+
+/* First Headline */
+.firstHeadline {
+	animation-delay: 1s;
+}
+
+/* Second Headline */
+.secondHeadline {
+	animation: text_reveal .5s ease forwards;
+	animation-delay: 2s;
+}	
+
+/* Span */
+.span {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 0;
+	background-color: var(--light-gray);
+	animation: text_reveal_box 1s ease;
+	animation-delay: .5s;
+}
+
+/* First span */
+.firstHeadline .span {
+	animation-delay: .5s;
+}
+
+/* Second span */
+.secondHeadline .span {
+	animation-delay: 1.5s;
+	background-color: var(--light-gray);
+}
+
+@keyframes text_reveal_box {
+	50% {
+		width: 100%;
+		left: 0;
+	}
+	100% {
+		width: 0;
+		left: 100%;
+	}
+}
+
+@keyframes text_reveal {
+	100% {
+    	color: var(--white);
+	}
+}
+
+/* SubHeadline */
+.subHeadline {
+	font-size: 1.8rem;
+	line-height: 2.2rem;
+	white-space: break-word;
+	margin-bottom: var(--spacing3);
+	color: var(--white);
+	z-index: 1;
+}
+
+@media (max-width: 1499px) {
+	.firstHeadline,
+	.secondHeadline,
+	.subHeadline {
+		margin-left: var(--grid-outer-margin);
+		margin-right: auto;
+	}
+}
+
+@media (min-width: 768px) {
+	/* Headline */
+	.headline {
+		line-height: 4.5rem;
+        font-size: 4rem;
+	}
+
+	/* SubHeadline */
+	.subHeadline {
+		font-size: 2.6rem;
+		line-height: 3.6rem;
+		margin-bottom: var(--spacing4);
+	}
+}
+
+@media (min-width: 1280px) {
+	/* Headline */
+    .headline {
+        font-size: 6rem;
+        line-height: 7rem;
+        text-align: initial;
+	}
+	
+	/* SubHeadline */
+	.subHeadline {
+		font-size: 3rem;
+		line-height: 4.5rem;
+	}
+}
+
+@media (min-width: 1500px) {
+    /* Content */
+    .content {
+        width: calc(var(--grid-column-width) * 12 + var(--grid-gap) * 11);
+        margin-left: auto;
+		margin-right: auto;
+    }
+}

@@ -1,0 +1,60 @@
+/* Container */
+.container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+/* Icon */
+.icon {
+    position: absolute;
+    top: 0;
+    left: 90%;
+    width: 16px;
+    height: 16px;
+    margin-top: var(--spacing2);
+}
+
+/* Input Text */
+.inputText {
+    width: 327px;
+    height: 48px;
+    padding-left: 1rem;
+    padding-right: 7rem;
+    border: none;
+    outline: none;
+    background: var(--light-gray);
+}
+
+.inputText:focus {
+    border-bottom: 2px solid var(--black);
+}
+
+/* Bottom Red */
+.bottomRed.bottomRed,
+.bottomRed.bottomRed:focus {
+    border-bottom: 2px solid var(--red);
+}
+
+/* Bottom Green */
+.bottomGreen.bottomGreen,
+.bottomGreen.bottomGreen:focus {
+    border-bottom: 2px solid var(--green);
+}
+
+:global(input[type='text']),
+:global(input[type='tel']),
+:global(input[type='email']),
+:global(input[type='date']),
+:global(input[type='number']),
+:global(input[type='checkbox']) {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+}
+
+
+@media (pointer: fine) {
+    .icon {
+        cursor: pointer;
+    }
+}

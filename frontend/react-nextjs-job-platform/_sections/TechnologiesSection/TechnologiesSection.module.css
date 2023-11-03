@@ -1,0 +1,129 @@
+.container {
+    padding-top: var(--spacing6);
+    padding-bottom: var(--spacing7);
+    background-color: var(--black);
+    color: var(--white);
+}
+
+/* Headline */
+.headline {
+    white-space: pre-wrap;
+    font-size: 3rem;
+    line-height: 3.5rem;
+    margin-bottom: var(--spacing2);
+    font-weight: var(--heavy);
+    color: var(--crimson-red);
+}
+
+/* subHeadline */
+.subHeadline {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-weight: var(--heavy);
+    margin-bottom: var(--spacing3);
+}
+
+/* Content */
+.content {
+    margin-bottom: var(--spacing5); 
+}
+
+/* Card */
+.card {
+    height: 100%;
+    max-height: 100%;
+}
+
+.container :global(.sliderNavigationItemActive) {
+    background-color: var(--white);
+}
+
+/* Card Headline */
+.cardHeadline {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    margin-bottom: var(--spacing2);
+    color: var(--crimson-red);
+}
+
+@media (min-width: 768px) {
+    .container {
+        padding-bottom: var(--spacing7);
+    }
+    
+    /* Headline */
+    .headline {
+        line-height: 4.5rem;
+        font-size: 4rem;
+    }
+
+    /* subHeadline */
+    .subHeadline {
+        font-size: 2.4rem;
+        line-height: 3.5rem;
+    }
+
+    /* Card Headline */
+    .cardHeadline {
+        font-size: 2.4rem;
+        line-height: 3.5rem;
+    }
+
+    /* Content */
+    .content > div > div > div {
+        flex-direction: row;
+    }
+
+    .content [class*='sliderControl'] {
+        bottom: 0;
+    }
+
+    .container :global(.sliderNavigationAndControls) button {
+        transform: unset;
+    }
+
+    .container :global(.sliderNavigationAndControls) button:first-child {
+        right: calc(var(--grid-column-width) * 1 + var(--spacing2));
+        padding-right: var(--spacing);
+        padding-left: var(--spacing4);
+    }
+
+    .container :global(.sliderNavigationAndControls) button:nth-child(2) {
+        right: 0;
+        padding-left: var(--spacing4);
+    }
+
+    .container :global(.sliderNavigationAndControls) button > svg > path {
+        width: 20px;
+        height: 20px;
+        fill: var(--crimson-red);
+    }
+}
+
+@media (min-width: 1280px) {    
+    /* Container */ 
+    .container {
+        padding-top: var(--spacing8);
+        padding-bottom: var(--spacing9);
+    }
+
+    /* Headline */
+    .headline {
+        font-size: 5rem;
+        line-height: 5.5rem;
+        margin-bottom: var(--spacing3);
+    }
+
+    /* subHeadline */
+    .subHeadline {
+        font-size: 3.4rem;
+        line-height: 4.5rem;
+        margin-bottom: var(--spacing4);
+    }
+
+    /* Card Headline */
+    .cardHeadline {
+        font-size: 3.4rem;
+        line-height: 4.5rem;
+    }
+}

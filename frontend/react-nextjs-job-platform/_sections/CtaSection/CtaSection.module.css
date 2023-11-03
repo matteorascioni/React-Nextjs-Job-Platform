@@ -1,0 +1,8 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: var(--spacing7);
+    padding-bottom: var(--spacing7);
+    background-color: var(--mine-shaft);
+}

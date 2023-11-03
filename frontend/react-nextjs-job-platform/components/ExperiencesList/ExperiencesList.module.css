@@ -1,0 +1,66 @@
+/* Headline */
+.headline {
+    font-size: 2rem;
+    line-height: 2.4rem;
+    margin-bottom: var(--spacing);
+}
+
+/* List */
+.list {
+    margin-bottom: var(--spacing6);
+}
+
+/* List item */
+.listItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--spacing2);
+    padding-top: var(--spacing);
+    padding-bottom: var(--spacing);
+    padding-left: var(--spacing);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+/* Icon */
+.icon {
+    margin-right: var(--spacing);
+}
+
+/* Role */
+.role {
+    display: block;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    margin-bottom: 4px;
+    font-weight: var(--heavy);
+}
+
+/* Company Name */
+.companyName {
+    display: block;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    font-weight: var(--medium);
+    color: var(--crimson-red);
+    margin-bottom: 4px;
+}
+
+/* Hyphen */
+.hyphen {
+    margin-left: var(--spacing);
+    margin-right: var(--spacing);
+}
+
+/* Date */
+.date {
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+}
+
+@media (min-width: 1280px) {
+    /* Headline */
+    .headline {
+        font-size: 2.4rem;
+        line-height: 2.8rem;
+    }
+}

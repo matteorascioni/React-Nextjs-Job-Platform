@@ -1,0 +1,42 @@
+.container {
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.container div {
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    animation: spin linear infinite;
+    border-bottom-color: red;
+}
+
+.container .c1 {
+    width: 80px;
+    height: 80px;
+    animation-duration: 0.85s;
+}
+
+.container .c2 {
+    top: -10px;
+    width: 100px;
+    height: 100px;
+    animation-duration: 0.95s;
+}
+
+.container .c3 {
+    top: -20px;
+    width: 120px;
+    height: 120px;
+    animation-duration: 1.05s;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

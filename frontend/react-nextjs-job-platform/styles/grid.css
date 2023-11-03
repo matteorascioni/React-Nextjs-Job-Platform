@@ -1,0 +1,381 @@
+:root {
+    --page-scrollbar-width: 0px;
+    /* Grid variables mobile */
+    --grid-width: calc(100vw - var(--page-scrollbar-width));
+    --grid-columns-count: 8; /* total columns in grid */
+    --grid-gap: var(--spacing2); /* gap between columns */
+    --grid-outer-margin: var(--spacing3); /* spacing from first / last column to outer viewport */
+    --grid-column-width: calc(
+        (var(--grid-width) - (var(--grid-gap) * (var(--grid-columns-count) - 1)) - (2 * var(--grid-outer-margin))) /
+        var(--grid-columns-count)
+    );
+}
+
+@media (max-width: 1279px) {
+    .grid-full-width {
+        width: inherit;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+/* TODO: the media query should be dynamic, best results @ --max-page-width + --page-scrollbar-width */
+@media (min-width: 1280px) and (max-width: 1499px) {
+    :root {
+        --grid-width: 1280px;
+    }
+
+    .grid-full-width {
+        width: inherit;
+        padding-left: calc(var(--viewport-offset) + var(--grid-outer-margin));
+        padding-right: calc(var(--viewport-offset) + var(--grid-outer-margin));
+    }
+}
+
+@media (min-width: 1500px) {
+    :root {
+        --grid-width: 1500px;
+    }
+
+    .grid-full-width {
+        width: inherit;
+        padding-left: calc(var(--viewport-offset) + var(--grid-outer-margin));
+        padding-right: calc(var(--viewport-offset) + var(--grid-outer-margin));
+    }
+}
+
+@media (max-height: 800px) {
+    .grid-full-width {
+        --full-width-min-height: 100vh;
+    }
+}
+
+/* Grid classes mobile */
+@media (min-width: 0px) and (max-width: 767px) {
+    .grid-full-width {
+        --full-width-min-height: 0;
+    }
+
+    .grid-mobile-full-width.grid-mobile-full-width {
+        width: calc(100vw - var(--page-scrollbar-width));
+    }
+
+    .grid-offset-1--mobile.grid-offset-1--mobile {
+        margin-left: calc((var(--grid-column-width) + var(--grid-gap)) * 1);
+    }
+
+    .grid-gap--mobile {
+        margin-left: var(--grid-gap);
+    }
+
+    .grid-1--mobile {
+        width: calc(var(--grid-column-width) * 1);
+    }
+
+    .grid-2--mobile {
+        width: calc(var(--grid-column-width) * 2 + var(--grid-gap) * 1);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .grid-3--mobile {
+        width: calc(var(--grid-column-width) * 3 + var(--grid-gap) * 2);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .grid-4--mobile {
+        width: calc(var(--grid-column-width) * 4 + var(--grid-gap) * 3);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .grid-5--mobile {
+        width: calc(var(--grid-column-width) * 5 + var(--grid-gap) * 4);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .grid-6--mobile {
+        width: calc(var(--grid-column-width) * 6 + var(--grid-gap) * 5);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .grid-7--mobile {
+        width: calc(var(--grid-column-width) * 7 + var(--grid-gap) * 6);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .grid-8--mobile {
+        width: calc(var(--grid-column-width) * 8 + var(--grid-gap) * 7);
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Grid variables tablet */
+@media (min-width: 768px) and (max-width: 1279px) {
+    :root {
+        --grid-columns-count: 8; /* total columns in grid */
+        --grid-gap: var(--spacing2); /* gap between columns */
+        --grid-outer-margin: var(--spacing8); /* spacing from first / last column to outer viewport */
+    }
+
+    .grid-full-width {
+        --full-width-min-height: 0;
+    }
+
+    .grid-tablet-full-width.grid-tablet-full-width {
+        width: 100vw;
+    }
+
+    .grid-gap--tablet {
+        margin-left: var(--grid-gap);
+    }
+
+    .grid-offset-0--tablet {
+        margin-left: 0;
+    }
+
+    .grid-offset-1--tablet {
+        margin-left: calc((var(--grid-column-width) + var(--grid-gap)) * 1);
+    }
+
+    .grid-offset-2--tablet {
+        margin-left: calc((var(--grid-column-width) + var(--grid-gap)) * 2);
+    }
+
+    .grid-offset-3--tablet {
+        margin-left: calc((var(--grid-column-width) + var(--grid-gap)) * 3);
+    }
+
+    .grid-offset-4--tablet {
+        margin-left: calc((var(--grid-column-width) + var(--grid-gap)) * 4);
+    }
+
+    .grid-1--tablet {
+        width: calc(var(--grid-column-width) * 1);
+    }
+
+    .grid-2--tablet {
+        width: calc(var(--grid-column-width) * 2 + var(--grid-gap) * 1);
+    }
+
+    .grid-3--tablet {
+        width: calc(var(--grid-column-width) * 3 + var(--grid-gap) * 2);
+    }
+
+    .grid-4--tablet {
+        width: calc(var(--grid-column-width) * 4 + var(--grid-gap) * 3);
+    }
+
+    .grid-5--tablet {
+        width: calc(var(--grid-column-width) * 5 + var(--grid-gap) * 4);
+    }
+
+    .grid-6--tablet {
+        width: calc(var(--grid-column-width) * 6 + var(--grid-gap) * 5);
+    }
+
+    .grid-7--tablet {
+        width: calc(var(--grid-column-width) * 7 + var(--grid-gap) * 6);
+    }
+
+    .grid-8--tablet {
+        width: calc(var(--grid-column-width) * 8 + var(--grid-gap) * 7);
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Grid variables desktop small (1280 - 1499) */
+@media (min-width: 1280px) and (max-width: 1499px) {
+    :root {
+        --grid-columns-count: 12; /* total columns in grid */
+        --grid-gap: var(--spacing4); /* gap between columns */
+        --grid-outer-margin: var(--spacing8); /* spacing from first / last column to outer viewport */
+    }
+
+    .grid-desktop-small-full-width.grid-desktop-small-full-width {
+        width: calc(100vw - var(--page-scrollbar-width));
+    }
+
+    .grid-offset-0--desktop-small {
+        margin-left: 0;
+    }
+
+    .grid-offset-1--desktop-small {
+        margin-left: calc(var(--grid-column-width) + var(--grid-gap));
+    }
+
+    .grid-offset-2--desktop-small {
+        margin-left: calc((var(--grid-column-width) + var(--grid-gap)) * 2);
+    }
+
+    .grid-offset-3--desktop-small {
+        margin-left: calc((var(--grid-column-width) + var(--grid-gap)) * 3);
+    }
+
+    .grid-offset-4--desktop-small {
+        margin-left: calc((var(--grid-column-width) + var(--grid-gap)) * 4);
+    }
+
+    .grid-offset-5--desktop-small {
+        margin-left: calc((var(--grid-column-width) + var(--grid-gap)) * 5);
+    }
+
+    .grid-offset-6--desktop-small {
+        margin-left: calc((var(--grid-column-width) + var(--grid-gap)) * 6);
+    }
+
+    .grid-gap--desktop-small {
+        margin-left: var(--grid-gap);
+    }
+
+    .grid-1--desktop-small {
+        width: calc(var(--grid-column-width) * 1);
+    }
+
+    .grid-2--desktop-small {
+        width: calc(var(--grid-column-width) * 2 + var(--grid-gap) * 1);
+    }
+
+    .grid-3--desktop-small {
+        width: calc(var(--grid-column-width) * 3 + var(--grid-gap) * 2);
+    }
+
+    .grid-4--desktop-small {
+        width: calc(var(--grid-column-width) * 4 + var(--grid-gap) * 3);
+    }
+
+    .grid-5--desktop-small {
+        width: calc(var(--grid-column-width) * 5 + var(--grid-gap) * 4);
+    }
+
+    .grid-6--desktop-small {
+        width: calc(var(--grid-column-width) * 6 + var(--grid-gap) * 5);
+    }
+
+    .grid-7--desktop-small {
+        width: calc(var(--grid-column-width) * 7 + var(--grid-gap) * 6);
+    }
+
+    .grid-8--desktop-small {
+        width: calc(var(--grid-column-width) * 8 + var(--grid-gap) * 7);
+    }
+
+    .grid-9--desktop-small {
+        width: calc(var(--grid-column-width) * 9 + var(--grid-gap) * 8);
+    }
+
+    .grid-10--desktop-small {
+        width: calc(var(--grid-column-width) * 10 + var(--grid-gap) * 9);
+    }
+
+    .grid-11--desktop-small {
+        width: calc(var(--grid-column-width) * 11 + var(--grid-gap) * 10);
+    }
+
+    .grid-12--desktop-small {
+        width: calc(var(--grid-column-width) * 12 + var(--grid-gap) * 11);
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Grid variables desktop large (1500 - ...) */
+@media (min-width: 1500px) {
+    :root {
+        --grid-columns-count: 12; /* total columns in grid */
+        --grid-gap: var(--spacing4); /* gap between columns */
+        --grid-outer-margin: var(--spacing12); /* spacing from first / last column to outer viewport */
+    }
+
+    .grid-desktop-large-full-width.grid-desktop-large-full-width {
+        width: calc(100vw - var(--page-scrollbar-width));
+    }
+
+    .grid-offset-0--desktop-large {
+        margin-left: 0;
+    }
+
+    .grid-offset-1--desktop-large {
+        margin-left: calc(var(--grid-column-width) + var(--grid-gap));
+    }
+
+    .grid-offset-2--desktop-large {
+        margin-left: calc((var(--grid-column-width) + var(--grid-gap)) * 2);
+    }
+
+    .grid-offset-3--desktop-large {
+        margin-left: calc((var(--grid-column-width) + var(--grid-gap)) * 3);
+    }
+
+    .grid-offset-4--desktop-large {
+        margin-left: calc((var(--grid-column-width) + var(--grid-gap)) * 4);
+    }
+
+    .grid-offset-5--desktop-large {
+        margin-left: calc((var(--grid-column-width) + var(--grid-gap)) * 5);
+    }
+
+    .grid-offset-6--desktop-large {
+        margin-left: calc((var(--grid-column-width) + var(--grid-gap)) * 6);
+    }
+
+    .grid-gap--desktop-large {
+        margin-left: var(--grid-gap);
+    }
+
+    .grid-1--desktop-large {
+        width: calc(var(--grid-column-width) * 1);
+    }
+
+    .grid-2--desktop-large {
+        width: calc(var(--grid-column-width) * 2 + var(--grid-gap) * 1);
+    }
+
+    .grid-3--desktop-large {
+        width: calc(var(--grid-column-width) * 3 + var(--grid-gap) * 2);
+    }
+
+    .grid-4--desktop-large {
+        width: calc(var(--grid-column-width) * 4 + var(--grid-gap) * 3);
+    }
+
+    .grid-5--desktop-large {
+        width: calc(var(--grid-column-width) * 5 + var(--grid-gap) * 4);
+    }
+
+    .grid-6--desktop-large {
+        width: calc(var(--grid-column-width) * 6 + var(--grid-gap) * 5);
+    }
+
+    .grid-7--desktop-large {
+        width: calc(var(--grid-column-width) * 7 + var(--grid-gap) * 6);
+    }
+
+    .grid-8--desktop-large {
+        width: calc(var(--grid-column-width) * 8 + var(--grid-gap) * 7);
+    }
+
+    .grid-9--desktop-large {
+        width: calc(var(--grid-column-width) * 9 + var(--grid-gap) * 8);
+    }
+
+    .grid-10--desktop-large {
+        width: calc(var(--grid-column-width) * 10 + var(--grid-gap) * 9);
+    }
+
+    .grid-11--desktop-large {
+        width: calc(var(--grid-column-width) * 11 + var(--grid-gap) * 10);
+    }
+
+    .grid-12--desktop-large {
+        width: calc(var(--grid-column-width) * 12 + var(--grid-gap) * 11);
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

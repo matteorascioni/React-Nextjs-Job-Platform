@@ -1,0 +1,277 @@
+/* Container */
+.container {
+    position: fixed;
+    height: calc(var(--main-navigation-height) - var(--spacing3));
+    top: 0;
+    width: 100%;
+    z-index: 20;
+}
+
+/* Content */
+.content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: var(--main-navigation-height);
+    padding-left: var(--grid-outer-margin);
+    background-color: var(--black);
+}
+
+/* logoLink */
+.logoLink {
+    line-height: 0;
+    color: var(--crimson-red);
+
+    /* TODO: REMOVE THIS PROPERTIES AND ADD THE REAL LOGO */
+    width: 200px;
+    height: 100%;
+    border: 1px solid red;
+}
+
+/* Logo */
+.logo {
+    height: 2.4rem;
+    max-height: 2.4rem;
+}
+
+/* Mobile Nav */
+.mobileNav {
+    opacity: 0;
+    transition: opacity var(--transition-default-timing) var(--transition-default-easing-in);
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--black);
+    z-index: 1;
+}
+
+.mobileNav:not(.mobileNavOpen) {
+    left: -10000vw;
+}
+
+.list {
+    list-style: none;
+}
+
+.active {
+    color: var(--crimson-red);
+}
+
+.listItems {
+    font-weight: var(--regular);
+    transition: all var(--transition-default-timing) var(--transition-default-easing-in);
+}
+
+/* List Links */
+.listLinks {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: var(--heavy);
+    padding-bottom: var(--spacing);
+    border-bottom: 1px solid var(--crimson-red);
+    color: var(--white);
+}
+
+.desktopNav {
+    opacity: 0;
+}
+
+/* Mobile and Tablet breakpoint to handle the hamburger menu */
+@media (max-width: 1499px) {
+    .hamburgerContainer {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 55px;
+        height: 55px;
+        right: var(--grid-outer-margin);
+        padding: 5px;
+        border-radius: 10px;
+        transition: all .5s ease;
+        z-index: 25;
+    }
+
+    .defaultBurger div,
+    .openBurger div {
+        width: 40px;
+        height: 3px;
+        border-radius: 2px;
+        margin: 10px;
+        transition: all .55s cubic-bezier(0.075, 0.82, 0.165, 1);
+        background-color: var(--crimson-red);
+    }
+    
+    .defaultBurger div {
+        transition: all .55s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+
+    .openBurger {
+        transition: all .5s ease;
+    }
+    
+    .defaultBurger div:first-child {
+        width: 16px;
+    }
+    .defaultBurger div:last-child {
+        width: 28px;
+    }
+
+    .openBurger div:first-child {
+        width: 17.4px;
+        transform: rotate(45deg) translateY(0px) translateX(5px);
+    }
+    .openBurger div:nth-child(2) {
+        transform: rotate(-45deg);
+    }
+    .openBurger div:last-child {
+        width: 30px;
+        transform: rotate(45deg) translateY(-14px) translateX(2px);
+    }
+
+    .mobileNav {
+        min-width: 100%;
+    }
+
+    /* Mobile Nav Open */
+    .mobileNavOpen {
+        opacity: 1;
+    }
+
+    /* List */
+    .list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* ListItems */
+    .listItems {
+        margin-bottom: var(--spacing3);
+    }
+
+    /* ListLinks */
+    .listLinks {
+        padding-bottom: var(--spacing);
+        padding-right: var(--spacing2);
+        padding-left: var(--spacing2);
+    }
+
+    /* Only From Desktop */
+    .onlyFromDesktop {
+        display: none;
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1499px) {
+    /* Container */
+    .container {
+        height: 85px;
+    }
+
+    /* Logo */
+    .logo {
+        height: 3rem;
+    }
+
+    /* Menu Icon Container */
+    .IconContainer {
+        padding-right: var(--spacing10);
+    }
+
+    /* List Links */
+    .listLinks {
+        font-size: 1.8rem;
+    }
+}
+
+/* Desktop breakpoint necessary to handle the menu differently from mobile and tablet */
+@media (min-width: 1500px) {
+    /* Container */
+    .container {
+        top: var(--meta-navigation-height);
+        height: inherit;
+        box-shadow: 0 3px 6px #00000029;
+        background-color: var(--black);
+    }
+
+    /* Content */
+    .content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: inherit;
+        padding-left: 0;
+    }
+
+    .desktopNav {
+        position: initial;
+        display: flex;
+        max-width: 100%;
+        opacity: 1;
+    }
+
+    /* List */
+    .list {
+        display: flex;
+    }
+
+    /* ListItems */
+    .listItems {
+        transition: all var(--transition-default-timing) var(--transition-default-easing-in);
+        border-bottom: 3px solid transparent;
+    }
+    
+    
+    /* List Links */
+    .listLinks {
+        padding: var(--spacing5) var(--spacing2) var(--spacing4) var(--spacing2);
+        font-size: 1.6rem;
+        color: var(--white);
+        border-bottom: none;
+    }
+
+    .transparent {
+        border-bottom: 3px solid transparent;
+    }
+
+    .active {
+        border-bottom: 3px solid var(--crimson-red);
+    }
+
+    /* OnlyOnMobileAndTablet */
+    .onlyOnMobileAndTablet {
+        display: none;
+    }
+}
+
+@media (pointer: fine) and (min-width: 1500px) {
+    /* Listitems */
+    .listItems:hover {
+        border-bottom: 3px solid var(--crimson-red);
+        transition: var(--transition-default-timing) var(--transition-default-easing);
+        cursor: pointer;
+    }
+}
+
+@media (pointer: fine) {
+    .hamburgerContainer {
+        cursor: pointer;
+    }
+
+    .listItems:hover .listLinks {
+        color: var(--crimson-red);
+        transition: var(--transition-default-timing) var(--transition-default-easing);
+    }
+}

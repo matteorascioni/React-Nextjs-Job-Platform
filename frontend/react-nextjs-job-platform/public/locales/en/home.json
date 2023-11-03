@@ -1,0 +1,245 @@
+{
+    "header_section_menu_items": [
+        {
+            "id": "h1",
+            "url": "/",
+            "title": "Home"
+        },
+        {
+            "id": "h2",
+            "url": "#aboutus",
+            "title": "About us"
+        },
+        {
+            "id": "h3",
+            "url": "#whyus",
+            "title": "Why us"
+        },
+        {
+            "id": "h4",
+            "url": "#leaseyourdeveloper",
+            "title": "Lease Your Dev"
+        },
+        {
+            "id": "h5",
+            "url": "#services",
+            "title": "services"
+        },
+        {
+            "id": "h6",
+            "url": "#technologies",
+            "title": "technologies"
+        },
+        {
+            "id": "h7",
+            "url": "#faq",
+            "title": "FAQ"
+        }
+    ],
+
+    "hero_section_first_headline": "Welcome to the",
+    "hero_section_second_headline": "DevZone",
+    "hero_section_sub_headline": "The right place to empower your company’s digital presence.",
+
+    "introduction_section_headline": "What is 01DevZone",
+    "introduction_section_first_paragraph": "What we do here at Devzone is connect companies and professionals, in the smartest possible way, through the use of our platform.",
+    "introduction_section_second_paragraph": " In the area reserved exclusively for companies, you can find carefully selected IT staff who will meet all your needs, such as building and or expanding an IT department.",
+    "introduction_section_discover_platform_button": "Discover the platform",
+    "introduction_section_third_paragraph": "Our goal is to put the customer's needs first so that we can offer the most efficient and customised service possible, so that our solutions can help your business express itself 100%.",
+    "introduction_section_link_label": "Find out more",
+    
+    "newsletter_section_headline": "Newsletter",
+    "newsletter_section_paragraph": "Subscribe to our newsletter to keep up to date with our latest news!",
+    "newsletter_section_placeholder": "Enter your email",
+    "newsletter_section_button_label": "sign up",
+
+    "why_us_section_headline": "Why DevZone?",
+    "why_us_section_first_card_headline": "Cost reduction",
+    "why_us_section_first_card_paragraph": "Hiring an IT professional through DevZone will give you access to the formula that will enable your company to cut costs and increase productivity from the get-go.",
+    "why_us_section_second_card_headline": "Feedback and customer service",
+    "why_us_section_second_card_paragraph": "We devote a lot of effort and energy to customer care because for us, you are the priority. That is why on a monthly basis you will be contacted with an email so that you can have the opportunity to give feedback on a DevZone professional you are working with, this allows us to keep the quality of our services as efficient as possible.",
+
+    "lease_your_dev_section_headline": "Lease your developer",
+    "lease_your_dev_section_sub_headline": "What is it?",
+    "lease_your_dev_section_first_paragraph": "It is a dedicated service aimed at bringing long-term value to your company.",
+    "lease_your_dev_section_second_paragraph": "According to current estimates from the research done by the bundesamt für statistik, the average salary of a senior IT professional in Switzerland is CHF 120'000.",
+    "lease_your_dev_section_third_paragraph": "The LeaseYourDeveloper formula allows you to significantly reduce costs and increase productivity in your IT department.",
+    "lease_your_dev_section_fourth_paragraph": "For example, imagine you need two senior professionals to expand your IT department, and thanks to the LeaseYourDevPlatform you have found them effortlessly. With DevZone, you can hire them forCHF 190,000 instead ofCHF 240,000, saving your company CHF 50,000 per year.",
+    "lease_your_dev_section_first_description_card_headline": "How does it work?",
+    "lease_your_dev_section_first_description_card_paragraph": "After you have selected all the professionals you need, you can book a free interview with the candidates directly on our platform. Our talent acquisition advisor will be there to take care of you throughout the selection process - in short, you will never be alone!",
+    "lease_your_dev_section_second_description_card_headline": "Payment method",
+    "lease_your_dev_section_second_description_card_paragraph": "Our payment method is very flexible and advantageous for companies as with the LeaseYourDev formula you are the one who hires DevZone, and not the professional directly, this allows for a B2B payment method that your company can deduct 100% (to be verified). For us, customer satisfaction and growth come first, which is why our contracts provide for monthly payments and spread over time, so that from the first month you can save money to boost your growth, because if you grow, we grow too!",
+
+    "services_section_headline": "Services",
+    "services_section_sub_headline": "Here are all the services you will find within the platform.",
+    "services_content": [
+        {
+            "id": "s1",
+            "headline": "E-commerce",
+            "paragraph": "Creation or enhancement of an already existing platform, through the most modern services, the ability to make offers, promotions, email-marketing automation, back-office for shipments, orders, payments and products etc. Possibility of integrating the most modern payment services (paypal/stripe/cc).",
+            "subline": "subline"
+        },
+        {
+            "id": "s2",
+            "headline": "Web applications",
+            "paragraph": "Development from scratch of a web-app including: customised design, integration of any existing API, 2FA (two-factor authentication), integrated back-office.",
+            "subline": "subline"
+        },
+        {
+            "id": "s3",
+            "headline": "Enterprise Software",
+            "paragraph": "Design and development of enterprise software (ERP), personnel management, roles and permissions in the system, management of electronic invoicing and budgets, real-time monitoring of business processes.",
+            "subline": "subline"
+        },
+        {
+            "id": "s4",
+            "headline": "SEO-Digital Transformation",
+            "paragraph": "Improved search engine indexing for your website, odience analysis, market analysis, analytics, rich data & SERPs, AMP.",
+            "subline": "subline"
+        },
+        {
+            "id": "s5",
+            "headline": "Web Design",
+            "paragraph": "Designing web pages from scratch, improving the user experience for existing pages through design tools such as Figma, Sketch, AdobeXD.",
+            "subline": "subline"
+        }
+    ],
+
+    "technology_section_headline": "Technologies",
+    "technology_section_sub_headline": "The technologies we use can guarantee the best performance on the market",
+    "technology_section_cards_content": [
+        {   
+            "id": "technology1",
+            "headline": "Frontend",
+            "stuck": [
+                {
+                    "id": "t1",
+                    "headline": "HTML5",
+                    "paragraph": "HTML (Hyper Text Markup Language) is the most widely used markup language on the Web. It is basically used to create and structure websites.",
+                    "icon": "html"
+                },
+                {
+                    "id": "t2",
+                    "headline": "CSS3",
+                    "paragraph": "CSS (Cascading Style Sheets), in computer science, is a language used to define the formatting of HTML, XHTML and XML documents, e.g. websites and related web pages.",
+                    "icon": "css"
+                },
+                {
+                    "id": "t3",
+                    "headline": "Javascript",
+                    "paragraph": "JavaScript is a multi-paradigm event-oriented programming language, commonly used in client-side web programming (later extended to the server side) for the creation, in websites and web applications, of dynamic interactive effects via script functions invoked by events triggered in turn in various ways by the user on the web page in use.",
+                    "icon": "javascript"
+                },
+                {
+                    "id": "t4",
+                    "headline": "Typescript",
+                    "paragraph": "TypeScript is an open source programming language developed by Microsoft. The language extends the syntax of JavaScript so that any program written in JavaScript is also able to run with TypeScript without any modifications. It was designed for the development of large applications and is intended to be compiled into JavaScript so that it can be interpreted by any web browser or app.",
+                    "icon": "typescript"
+                },
+                {
+                    "id": "t5",
+                    "headline": "React",
+                    "paragraph": "React is an open-source, front-end library for creating user interfaces and can be used as a basis in the development of single-page applications (SPA) and websites.",
+                    "icon": "react"
+                },
+                {
+                    "id": "t6",
+                    "headline": "Redux",
+                    "paragraph": "Redux is an open-source JavaScript library for managing and to organize application state. It is commonly used with libraries such as React.",
+                    "icon": "redux"
+                },
+                {
+                    "id": "t7",
+                    "headline": "Next Js",
+                    "paragraph": "Next.js is an open source web development framework created by Vercel that enables React-based web applications with server-side rendering and static website generation.  Where traditional React apps can only render their content in the client-side browser, Next.js extends this functionality to include server-side rendered applications.",
+                    "icon": "next"
+                },
+                {
+                    "id": "t8",
+                    "headline": "Gatsby Js",
+                    "paragraph": "Gatsby is an open source static site generator based on Node.js using React and GraphQL. It provides over 2500 plugins to create static sites based on sources such as Markdown documents, MDX (Markdown with JSX), images and numerous content management systems such as WordPress, Drupal and more. From version 4, Gatsby also supports server-side rendering and static deferred generation for rendering dynamic websites on a Node.js server.",
+                    "icon": "gatsby"
+                }
+            ]
+        },
+        {
+            "id": "technology2",
+            "headline": "Backend",
+            "stuck": [
+                {
+                    "id": "t8",
+                    "headline": "GraphQL",
+                    "paragraph": "GraphQL is an open-source data query and manipulation language for APIs and a runtime for satisfying queries with existing data.",
+                    "icon": "graphql"
+                },
+                {
+                    "id": "t9",
+                    "headline": "Python/Django",
+                    "paragraph": "Django is an open-source Python-based Web framework that follows the template-template-views (MTV) model. Django's main goal is to facilitate the creation of complex database-driven websites. The framework emphasises reusability and \"scalability\" of components, less code, low coupling, fast development and the principle of non-repeatability.",
+                    "icon": "django"
+                },
+                {
+                    "id": "t10",
+                    "headline": "PHP/Laravel",
+                    "paragraph": "Laravel is an open-source PHP web framework intended for the development of web applications following the model - view - controller (MVC) architectural pattern.",
+                    "icon": "laravel"
+                },
+                {
+                    "id": "t11",
+                    "headline": "Python/Flask",
+                    "paragraph": "Flask is a micro web framework written in Python. It is classified as a microframework because it does not require any special tools or libraries. It has no database abstraction layer, form validation or other components where pre-existing third-party libraries provide common functions. However, Flask supports extensions that can add functionality to the application as if they were implemented in Flask itself.",
+                    "icon": "flask"
+                },
+                {
+                    "id": "t12",
+                    "headline": "NoSQL",
+                    "paragraph": "lorem ipsum dolor sit amet",
+                    "icon": "nosql"
+    
+                },
+                {
+                    "id": "t13",
+                    "headline": "SQL",
+                    "paragraph": "lorem ipsum dolor sit amet",
+                    "icon": "sql"
+                }
+            ]
+        },
+        {
+            "id": "technology3",
+            "headline": "Cloud/DevOps",
+            "stuck": [
+                {
+                    "id": "t14",
+                    "headline": "Nginx",
+                    "paragraph": "Nginx is a web server that can also be used as a reverse proxy, load balancer, mail proxy and HTTP cache. Nginx is open source software, and most Web servers use Nginx.",
+                    "icon": "nginx"
+                },
+                {
+                    "id": "t15",
+                    "headline": "Apache",
+                    "paragraph": "lorem ipsum dolor sit amet",
+                    "icon": "apache"
+                },
+                {
+                    "id": "t16",
+                    "headline": "Docker",
+                    "paragraph": "Docker is a set of Platform as a Service (PaaS) products that use virtualization at the operating system level to deliver software in packages called containers. The software that hosts the containers is called Docker Engine.",
+                    "icon": "docker"
+                },
+                {
+                    "id": "t17",
+                    "headline": "GCP(Google Cloud Platform)",
+                    "paragraph": "Google Cloud Platform (GCP), offered by Google, is a suite of cloud computing services that runs on the same infrastructure used internally by Google for its end-user products, such as Gmail, Google Drive and YouTube. In addition to a set of management tools, it provides a series of modular cloud services including computing, data storage, data analysis and machine learning.",
+                    "icon": "google_cloud"
+                },
+                {
+                    "id": "t18",
+                    "headline": "AWS(Amazon Web Service)",
+                    "paragraph": "Amazon Web Services, Inc. (AWS) is a subsidiary of Amazon that provides on-demand cloud computing platforms and APIs to individuals, businesses and governments, based on measured consumption. These cloud computing Web services provide distributed computing capabilities and software tools through AWS server farms.",
+                    "icon": "aws"
+                }
+            ]
+        }
+    ]
+}

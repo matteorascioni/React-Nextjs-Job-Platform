@@ -1,0 +1,12 @@
+.white path {
+    fill: var(--white);
+}
+
+.black path {
+    fill: var(--black);
+}
+
+.crimson path {
+    fill: var(--crimson-red);
+}
+

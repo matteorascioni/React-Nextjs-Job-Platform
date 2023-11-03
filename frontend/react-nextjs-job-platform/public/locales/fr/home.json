@@ -1,0 +1,244 @@
+{
+    "header_section_menu_items": [
+        {
+            "id": "h1",
+            "url": "/",
+            "title": "Accueil"
+        },
+        {
+            "id": "h2",
+            "url": "#aboutus",
+            "title": "A propos de nous"
+        },
+        {
+            "id": "h3",
+            "url": "#whyus",
+            "title": "Pourquoi nous"
+        },
+        {
+            "id": "h4",
+            "url": "#leaseyourdeveloper",
+            "title": "Louez votre Dev"
+        },
+        {
+            "id": "h5",
+            "url": "#services",
+            "title": "Services"
+        },
+        {
+            "id": "h6",
+            "url": "#technologies",
+            "title": "Technologies"
+        },
+        {
+            "id": "h7",
+            "url": "#faq",
+            "title": "FAQ"
+        }
+    ],
+
+    "hero_section_first_headline": "Bienvenue dans la ",
+    "hero_section_second_headline": "DevZone",
+    "hero_section_sub_headline": "Le bon endroit pour renforcer la présence numérique de votre entreprise.",
+
+    "introduction_section_headline": "Qu'est-ce que 01DevZone",
+    "introduction_section_first_paragraph": "Ce que nous faisons ici, chez Devzone, c'est mettre en relation des entreprises et des professionnels, de la manière la plus intelligente possible, grâce à l'utilisation de notre plateforme.",
+    "introduction_section_second_paragraph": "Dans l'espace réservé exclusivement aux entreprises, vous trouverez des informaticiens soigneusement sélectionnés qui répondront à tous vos besoins, tels que la création ou l'extension d'un département informatique.",
+    "introduction_section_discover_platform_button": "Découvrez la plateforme",
+    "introduction_section_third_paragraph": "Notre objectif est de mettre les besoins du client au premier plan afin d'offrir le service le plus efficace et personnalisé possible, de sorte que nos solutions puissent aider votre entreprise à s'exprimer à 100%.",
+    
+    "newsletter_section_headline": "Newsletter",
+    "newsletter_section_paragraph": "Inscrivez-vous à notre newsletter pour rester au courant de nos dernières nouvelles !",
+    "newsletter_section_placeholder": "Entrez votre email",
+    "newsletter_section_button_label": "s'inscrire",
+
+    "why_us_section_headline": "Pourquoi DevZone ?",
+    "why_us_section_first_card_headline": "Réduction des coûts",
+    "why_us_section_first_card_paragraph": "En engageant un professionnel de l'informatique par l'intermédiaire de DevZone, vous aurez accès à la formule qui permettra à votre entreprise de réduire ses coûts et d'augmenter sa productivité dès le premier instant.",
+    "why_us_section_second_card_headline": "Commentaires et service à la clientèle",
+    "why_us_section_second_card_paragraph": "Nous consacrons beaucoup d'efforts et d'énergie au service à la clientèle car pour nous, vous êtes la priorité. C'est pourquoi vous serez contacté chaque mois par un e-mail afin que vous puissiez donner votre avis sur un professionnel de DevZone avec lequel vous travaillez, ce qui nous permet de maintenir la qualité de nos services aussi efficace que possible.",
+
+    "lease_your_dev_section_headline": "Louez votre développeur",
+    "lease_your_dev_section_sub_headline": "Qu'est-ce que c'est ?",
+    "lease_your_dev_section_first_paragraph": "Il s'agit d'un service dédié visant à apporter de la valeur à long terme à votre entreprise.",
+    "lease_your_dev_section_second_paragraph": "Selon les estimations actuelles issues des recherches effectuées par le bundesamt für statistik, le salaire moyen d'un professionnel IT senior en Suisse est de 120'000 CHF.",
+    "lease_your_dev_section_third_paragraph": "La formule LeaseYourDeveloper vous permet de réduire considérablement les coûts et d'augmenter la productivité de votre département informatique.",
+    "lease_your_dev_section_fourth_paragraph": "Par exemple, imaginez que vous ayez besoin de deux professionnels seniors pour étoffer votre département informatique, et que grâce à la formule LeaseYourDevPlatform vous les ayez trouvés sans effort. Avec DevZone, vous pouvez les engager pour 190 000 CHF au lieu de 240 000 CHF, ce qui permet à votre entreprise d'économiser 50 000 CHF par an.",
+    "lease_your_dev_section_first_description_card_headline": "Comment cela fonctionne-t-il ?",
+    "lease_your_dev_section_first_description_card_paragraph": "Après avoir sélectionné tous les professionnels dont vous avez besoin, vous pouvez réserver un entretien gratuit avec les candidats directement sur notre plateforme. Notre conseiller en acquisition de talents sera là pour s'occuper de vous tout au long du processus de sélection - en bref, vous ne serez jamais seul!",
+    "lease_your_dev_section_second_description_card_headline": "Mode de paiement",
+    "lease_your_dev_section_second_description_card_paragraph": "Notre mode de paiement est très flexible et avantageux pour les entreprises car avec la formule LeaseYourDev c'est vous qui engagez DevZone, et non le professionnel directement, cela permet un mode de paiement B2B que votre entreprise peut déduire à 100% (à vérifier). Pour nous, la satisfaction du client et sa croissance passent avant tout, c'est pourquoi nos contrats prévoient des paiements mensuels et étalés dans le temps, afin que dès le premier mois vous puissiez économiser de l'argent pour booster votre croissance, car si vous grandissez, nous grandissons aussi!",
+
+    "services_section_headline": "Services",
+    "services_section_sub_headline": "Voici l'ensemble des services que vous trouverez au sein de la plateforme.",
+    "services_content": [
+        {
+            "id": "s1",
+            "headline": "Commerce électronique",
+            "paragraph": "Création ou amélioration d'une plateforme déjà existante, grâce aux services les plus modernes, la possibilité de faire des offres, des promotions, l'automatisation de l'email-marketing, le back-office pour les expéditions, les commandes, les paiements et les produits, etc. Capacité d'intégrer les services de paiement les plus modernes (paypal/stripe/cc).",
+            "subline": "subline"
+        },
+        {
+            "id": "s2",
+            "headline": "Applications web",
+            "paragraph": "Développement à partir de zéro d'une application web comprenant : conception personnalisée, intégration de toute API existante, 2FA (authentification à deux facteurs), back-office intégré.",
+            "subline": "subline"
+        },
+        {
+            "id": "s3",
+            "headline": "Logiciels d'entreprise",
+            "paragraph": "Conception et développement de logiciels d'entreprise (ERP), gestion du personnel, rôles et autorisations dans le système, gestion de la facturation et des budgets électroniques, suivi en temps réel des processus d'entreprise.",
+            "subline": "subline"
+        },
+        {
+            "id": "s4",
+            "headline": "SEO-Transformation numérique",
+            "paragraph": "Amélioration de l'indexation de votre site Web par les moteurs de recherche, analyse de l'influence, analyse du marché, analyses, données riches et SERP, AMP.",
+            "subline": "subline"
+        },
+        {
+            "id": "s5",
+            "headline": "Conception Web",
+            "paragraph": "Conception de pages web à partir de zéro, amélioration de l'expérience utilisateur pour les pages existantes grâce à des outils de conception tels que Figma, Sketch, AdobeXD.",
+            "subline": "subline"
+        }
+    ],
+
+    "technology_section_headline": "Technologies",
+    "technology_section_sub_headline": "Les technologies que nous utilisons peuvent garantir les meilleures performances du marché.",
+    "technology_section_cards_content": [
+        {   
+            "id": "technology1",
+            "headline": "Frontend",
+            "stuck": [
+                {
+                    "id": "t1",
+                    "headline": "HTML5",
+                    "paragraph": "Le HTML (Hyper Text Markup Language) est le langage de balisage le plus utilisé sur le Web. Il est essentiellement utilisé pour créer et structurer des sites web.",
+                    "icon": "html"
+                },
+                {
+                    "id": "t2",
+                    "headline": "CSS3",
+                    "paragraph": "CSS (Cascading Style Sheets), en informatique, est un langage utilisé pour définir le formatage des documents HTML, XHTML et XML, par exemple les sites Web et les pages Web connexes.",
+                    "icon": "css"
+                },
+                {
+                    "id": "t3",
+                    "headline": "Javascript",
+                    "paragraph": "JavaScript est un langage de programmation multi-paradigme orienté événements, couramment utilisé dans la programmation web côté client (étendu ultérieurement au côté serveur) pour la création, dans les sites web et les applications web, d'effets interactifs dynamiques via des fonctions de script invoquées par des événements déclenchés à leur tour de diverses manières par l'utilisateur sur la page web utilisée.",
+                    "icon": "javascript"
+                },
+                {
+                    "id": "t4",
+                    "headline": "Typescript",
+                    "paragraph": "TypeScript est un langage de programmation open source développé par Microsoft. Le langage étend la syntaxe de JavaScript de sorte que tout programme écrit en JavaScript est également capable de fonctionner avec TypeScript sans aucune modification. Il a été conçu pour le développement de grandes applications et est destiné à être compilé en JavaScript afin de pouvoir être interprété par n'importe quel navigateur ou application web.",
+                    "icon": "typescript"
+                },
+                {
+                    "id": "t5",
+                    "headline": "React",
+                    "paragraph": "React est une bibliothèque frontale open-source destinée à la création d'interfaces utilisateur et peut être utilisée comme base pour le développement d'applications monopages (SPA) et de sites web.",
+                    "icon": "react"
+                },
+                {
+                    "id": "t6",
+                    "headline": "Redux",
+                    "paragraph": "Redux est une bibliothèque JavaScript open-source permettant de gérer et de centraliser l'état des applications. Il est couramment utilisé avec des bibliothèques telles que React.",
+                    "icon": "redux"
+                },
+                {
+                    "id": "t7",
+                    "headline": "Next Js",
+                    "paragraph": "Next.js est un cadre de développement web open source créé par Vercel qui permet de réaliser des applications web basées sur React avec un rendu côté serveur et la génération de sites web statiques.  Alors que les applications React traditionnelles ne peuvent rendre leur contenu que dans le navigateur côté client, Next.js étend cette fonctionnalité aux applications rendues côté serveur.",
+                    "icon": "next"
+                },
+                {
+                    "id": "t8",
+                    "headline": "Gatsby Js",
+                    "paragraph": "Gatsby est un générateur de site statique open source basé sur Node.js utilisant React et GraphQL. Il fournit plus de 2500 plugins pour créer des sites statiques basés sur des sources telles que des documents Markdown, MDX (Markdown avec JSX), des images et de nombreux systèmes de gestion de contenu tels que WordPress, Drupal et plus encore. À partir de la version 4, Gatsby prend également en charge le rendu côté serveur et la génération statique différée pour le rendu des sites Web dynamiques sur un serveur Node.js.",
+                    "icon": "gatsby"
+                }
+            ]
+        },
+        {
+            "id": "technology2",
+            "headline": "Backend",
+            "stuck": [
+                {
+                    "id": "t8",
+                    "headline": "GraphQL",
+                    "paragraph": "GraphQL est un langage de requête et de manipulation de données à code source ouvert pour les API et un moteur d'exécution pour satisfaire les requêtes avec les données existantes.",
+                    "icon": "graphql"
+                },
+                {
+                    "id": "t9",
+                    "headline": "Python/Django",
+                    "paragraph": "Django est un cadre Web open-source basé sur Python qui suit le modèle template-template-views (MTV). L'objectif principal de Django est de faciliter la création de sites Web complexes pilotés par des bases de données. Ce cadre met l'accent sur la réutilisabilité et l'évolutivité des composants, la réduction du code, le faible couplage, le développement rapide et le principe de non-répétitivité.",
+                    "icon": "django"
+                },
+                {
+                    "id": "t10",
+                    "headline": "PHP/Laravel",
+                    "paragraph": "Laravel est un framework web PHP open-source destiné au développement d'applications web suivant le modèle architectural MVC (model - view - controller).",
+                    "icon": "laravel"
+                },
+                {
+                    "id": "t11",
+                    "headline": "Python/Flask",
+                    "paragraph": "Flask est un framework micro web écrit en Python. Il est classé dans la catégorie des micro-frames car il ne nécessite pas d'outils ou de bibliothèques spécifiques. Il ne possède pas de couche d'abstraction de base de données, de validation de formulaires ou d'autres composants pour lesquels des bibliothèques tierces préexistantes fournissent des fonctions communes. Cependant, Flask supporte des extensions qui peuvent ajouter des fonctionnalités à l'application comme si elles étaient implémentées dans Flask lui-même.",
+                    "icon": "flask"
+                },
+                {
+                    "id": "t12",
+                    "headline": "NoSQL",
+                    "paragraph": "lorem ipsum dolor sit amet",
+                    "icon": "nosql"
+    
+                },
+                {
+                    "id": "t13",
+                    "headline": "SQL",
+                    "paragraph": "lorem ipsum dolor sit amet",
+                    "icon": "sql"
+                }
+            ]
+        },
+        {
+            "id": "technology3",
+            "headline": "Cloud/DevOps",
+            "stuck": [
+                {
+                    "id": "t14",
+                    "headline": "Nginx",
+                    "paragraph": "Nginx est un serveur web qui peut également être utilisé comme proxy inverse, équilibreur de charge, proxy de messagerie et cache HTTP. Nginx est un logiciel libre, et la plupart des serveurs Web utilisent Nginx.",
+                    "icon": "nginx"
+                },
+                {
+                    "id": "t15",
+                    "headline": "Apache",
+                    "paragraph": "lorem ipsum dolor sit amet",
+                    "icon": "apache"
+                },
+                {
+                    "id": "t16",
+                    "headline": "Docker",
+                    "paragraph": "Docker est un ensemble de produits \"Platform as a Service\" (PaaS) qui utilisent la virtualisation au niveau du système d'exploitation pour fournir des logiciels dans des paquets appelés conteneurs. Le logiciel qui héberge les conteneurs s'appelle Docker Engine.",
+                    "icon": "docker"
+                },
+                {
+                    "id": "t17",
+                    "headline": "GCP(Google Cloud Platform)",
+                    "paragraph": "Google Cloud Platform (GCP), proposée par Google, est une suite de services informatiques en nuage qui fonctionne sur la même infrastructure que celle utilisée en interne par Google pour ses produits destinés aux utilisateurs finaux, tels que Gmail, Google Drive et YouTube. Outre un ensemble d'outils de gestion, il fournit une série de services modulaires en nuage, notamment l'informatique, le stockage de données, l'analyse de données et l'apprentissage automatique.",
+                    "icon": "google_cloud"
+                },
+                {
+                    "id": "t18",
+                    "headline": "AWS(Amazon Web Service)",
+                    "paragraph": "Amazon Web Services, Inc. (AWS) est une filiale d'Amazon qui fournit des plateformes de cloud computing et des API à la demande aux particuliers, aux entreprises et aux gouvernements, sur la base d'une consommation mesurée. Ces services Web d'informatique en nuage fournissent des capacités informatiques distribuées et des outils logiciels par l'intermédiaire des fermes de serveurs AWS.",
+                    "icon": "aws"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,83 @@
+.container {
+    display: block;
+}
+
+.noErrorContainer {
+    display: flex;
+}
+
+/* General Input */
+.input {
+    appearance: none;
+    -webkit-appearance: none;
+    width: var(--spacing4);
+    height: var(--spacing4);
+    margin-right: var(--spacing2);
+    border: 2px solid var(--gray80);
+}
+
+.input:hover {
+    background-color: var(--light-gray);
+    cursor: pointer;
+}
+
+/* Black & Gray checked input */
+.black:checked,
+.gray:checked {
+    position: relative;
+    border: none;
+}
+
+.black:checked {
+    background: var(--black);
+}
+
+.gray:checked {
+    background: var(--gray80);
+}
+
+/* :after checked CSS element */
+.black:checked::after,
+.gray:checked::after {
+    position: absolute;
+    display: block;
+    content: ' ';
+    width: 24px;
+    height: 24px;
+    background-image: url('data:image/svg+xml;utf8,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M16.8859 7.20712L9.80009 14.2929L6.31431 10.7071L4.91431 12.1071L7.70009 14.9929L9.80009 17.0929L18.3859 8.60712L16.8859 7.20712Z" fill="rgb(255,255,255, 1)"/></svg>');
+    margin-top: 4px;
+    margin-left: 5px;
+    color: var(--white);
+}
+
+/* Border Red */
+.redBorder {
+    border: 2px solid var(--crimson-red);
+}
+
+/* Label */
+.label {
+    width: calc(100% - var(--spacing6));
+    margin-bottom: 0;
+}
+
+.label p + p {
+    margin-top: 1em;
+}
+
+.label a {
+    color: var(--crimson-red);
+    transition: color var(--transition-default-timing) var(--transition-default-easing);
+}
+
+.label a:hover {
+    color: var(--black);
+}
+
+.label a:active span {
+    color: var(--slate);
+}
+
+/*.error {*/
+/*    margin-left: var(--spacing6);*/
+/*}*/

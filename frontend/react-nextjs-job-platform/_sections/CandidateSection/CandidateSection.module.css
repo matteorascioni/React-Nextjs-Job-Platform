@@ -1,0 +1,109 @@
+/* Container */
+.container {
+    padding-top: var(--spacing6);
+    padding-bottom: var(--spacing7);
+}
+
+/* Headline */
+.headline {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    font-weight: var(--heavy);
+    margin-bottom: var(--spacing3);
+    color: var(--crimson-red);
+}
+
+/* Slider */
+.container :global(.sliderNavigation) {
+    top: -20px;
+}
+
+.container :global(.sliderNavigationItemActive) {
+    background-color: var(--crimson-red);
+}
+
+.container :global(.sliderNavigation) > li {
+    border: 1px solid var(--crimson-red);
+}
+
+@media (min-width: 768px) {
+    /* Container */
+    .container {
+        padding-bottom: var(--spacing7);
+    }
+
+    /* Headline */
+    .headline {
+        line-height: 4.5rem;
+        font-size: 4rem;
+    }
+
+    /* Slider */
+    .container :global(.slider) {
+        border: 1px solid red;
+        padding-bottom: var(--spacing3);
+    }
+
+    .container :global(.sliderItem) {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .content [class*='sliderControl'] {
+        bottom: 0;
+    }
+
+    .container :global(.sliderNavigation) {
+        top: -34px;
+    }
+
+    .container :global(.sliderNavigationAndControls) button {
+        transform: unset;
+        box-shadow: none;
+    }
+
+    .container :global(.sliderNavigationAndControls) button:first-child {
+        right: calc(var(--grid-outer-margin) * 2 + var(--spacing2));
+        padding-right: var(--spacing);
+        padding-left: var(--spacing4);
+    }
+    
+    .container :global(.sliderNavigationAndControls) button:nth-child(2) {
+        right: var(--grid-outer-margin);
+        padding-left: var(--spacing4);
+    }
+
+    .container :global(.sliderNavigationAndControls) button > svg > path {
+        width: 20px;
+        height: 20px;
+        fill: var(--crimson-red);
+    }
+
+    .container :global(.sliderNavigationAndControls) > ul {
+        margin-bottom: var(--spacing4);
+    }    
+}
+
+@media (min-width: 1280px) {
+    /* Container */ 
+    .container {
+        padding-top: var(--spacing8);
+        padding-bottom: var(--spacing9);
+    }
+
+    /* Headline */
+    .headline {
+        font-size: 5rem;
+        line-height: 5.5rem;
+        margin-bottom: var(--spacing3);
+        margin-left: var(--grid-outer-margin);
+    }
+
+    /* Slider */
+    .container :global(.sliderItem) {
+        flex-direction: row;
+        justify-content: center;
+        padding-left: var(--grid-outer-margin);
+        padding-right: var(--grid-outer-margin);
+    }
+}

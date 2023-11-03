@@ -1,0 +1,60 @@
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: var(--spacing6) var(--spacing4);
+    background-color: var(--white);
+    box-shadow: var(--card-box-shadow);
+}
+
+/* Image */
+.image {
+    width: 100px;
+    height: 100px;
+    margin-bottom: var(--spacing3);
+    border-radius: 50%;
+
+    /* TODO: remove this momentary properties */
+    background-color: var(--white);
+    border: 3px solid red;
+}
+
+/* Name */
+.name {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    font-weight: var(--heavy);
+    margin-bottom: var(--spacing3);
+}
+
+/* Paragraph */
+/* .paragraph {
+    position: relative;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    white-space: pre-line;
+    text-align: center;
+    margin-bottom: var(--spacing2);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+} */
+
+/* Link */
+.link {
+    font-size: 2rem;
+    line-height: 3rem;
+    font-weight: var(--heavy);
+    text-align: center;
+    text-decoration: underline;
+    color: var(--crimson-red);
+}
+
+/* @media (min-width: 1280px) {
+    /* Paragraph */
+    .paragraph {
+        text-align: left;
+    }   
+} */
