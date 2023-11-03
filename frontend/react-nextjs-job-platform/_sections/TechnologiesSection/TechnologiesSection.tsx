@@ -5,8 +5,22 @@ import TechnologyCard from '@components/TechnologyCard/TechnologyCard';
 import Slider from '@components/Slider/Slider';
 import FormModal from '@components/FormModal/FormModal';
 import { useTranslation } from 'next-i18next';
+import { Icons } from '@typescript/types';
 
 import styles from './TechnologiesSection.module.css';
+
+interface IInnerTechnologies{
+    id: string;
+    headline: string;
+    paragraph: string;
+    icon: Icons;
+}
+
+interface ITechnologies {
+    id: string;
+    headline: string;
+    stuck: IInnerTechnologies[];
+}
 
 const TechnologiesSection = () => {
     const { t } = useTranslation('home');
@@ -59,8 +73,11 @@ const TechnologiesSection = () => {
 
                 {/* TRADUZIONE DISPONIBILE SOLO SUL FILE HOME.JSON/IT */}
                 {/* Content */}
-                {t('home:technology_section_cards_content', {returnObjects: true}).map((item, index) => { 
-                    return(
+                {t('home:technology_section_cards_content', {returnObjects: true}).map((item: ITechnologies) => {
+                    if(Array.isArray(item)) {
+                        return null;
+                    }
+                    return (
                         <div 
                             key={item.id}
                             className={classNames({
@@ -85,7 +102,7 @@ const TechnologiesSection = () => {
                             {/* Card  */}
                             {item.stuck && (
                                 <Slider
-                                    items={item.stuck.map((technology, index) => {
+                                    items={item.stuck.map((technology: IInnerTechnologies, index: number) => {
                                         return (
                                             <div 
                                                 key={technology.id}

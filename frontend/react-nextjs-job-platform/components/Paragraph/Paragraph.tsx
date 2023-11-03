@@ -1,8 +1,8 @@
 import React from 'react';
 
 interface IParagraph {
-    className: string;
-    paragraph?: string;
+    className?: string;
+    paragraph: string;
 }
 
 const Paragraph = ({ className, paragraph }:IParagraph) => {

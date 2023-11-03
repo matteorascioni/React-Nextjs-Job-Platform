@@ -1,6 +1,7 @@
 import Layout from "@components/Layout/Layout";
 import { appWithTranslation } from "next-i18next";
 import { useState } from "react";
+import { I18nextProvider } from 'react-i18next';
 // import AppContext from "context/AppContext";
 
 import "@styles/globals.css";

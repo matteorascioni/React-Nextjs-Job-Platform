@@ -4,7 +4,11 @@ import Button from '@components/Button/Button';
 import {disableScroll, disableNavigationScroll} from '@helpers/disableScroll';
 import { useTranslation } from 'next-i18next';
 
-const FormModal = ({ layout }) => {
+interface IFormModal {
+    layout?: 'noButton' | 'buttonRed';
+}
+
+const FormModal = ({ layout }: IFormModal) => {
     const[isModalOpen, setIsModalOpen] = useState(false);
     const { t } = useTranslation('common');
     

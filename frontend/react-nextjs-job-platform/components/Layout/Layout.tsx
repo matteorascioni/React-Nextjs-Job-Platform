@@ -8,7 +8,11 @@ import Footer from '@components/Footer/Footer';
 
 import styles from './Layout.module.css';
 
-const Layout = ({ children }) => {
+interface ILayout {
+    children: React.ReactElement | React.ReactElement[];
+}
+
+const Layout = ({ children }: ILayout) => {
 //     const {
 //         authenticated,
 //         setAuthenticated,
@@ -55,7 +59,7 @@ const Layout = ({ children }) => {
 
     return (
         <>
-            {/* <Header /> */}
+            <Header />
             <main className={styles.main}>
                 {children}
             </main>

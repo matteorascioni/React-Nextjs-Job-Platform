@@ -4,7 +4,12 @@ import LanguageSwitcher from '@components/LanguageSwitcher/LanguageSwitcher';
 
 import styles from './MetaNavigation.module.css';
 
-const MetaNavigation = ({ toggleMenu }) => {
+interface IMetaNavigation {
+    toggleMenu: boolean;
+    layout?: 'noButton' | 'buttonRed';
+}
+
+const MetaNavigation = ({ toggleMenu, layout }: IMetaNavigation) => {
     return (
         <div className={styles.container}>
             {/* Content */}
@@ -19,7 +24,7 @@ const MetaNavigation = ({ toggleMenu }) => {
             >
                 {/* FormModal */}
                 <div className={styles.formModal}>
-                    <FormModal layout="noButton" />
+                    <FormModal layout={layout} />
                 </div>
 
                 {/* Language Switcher */}

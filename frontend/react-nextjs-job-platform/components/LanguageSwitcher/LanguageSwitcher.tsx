@@ -7,7 +7,11 @@ import { classNames } from '@helpers/classes';
 
 import styles from './LanguageSwitcher.module.css';
 
-const LanguageSwitcher = ({ toggleMenu }) => {
+interface ILanguageSwitcher {
+    toggleMenu: boolean;
+}
+
+const LanguageSwitcher = ({ toggleMenu }: ILanguageSwitcher) => {
     const [isOpen, setIsOpen] = useState(false);
     const [language, setLanguage] = useState('');
     const router = useRouter();
@@ -68,7 +72,7 @@ const LanguageSwitcher = ({ toggleMenu }) => {
                                         })} 
                                         href="/" locale={locale.langcode}
                                     >
-                                            {locale.langcode}
+                                        {locale.langcode}
                                     </Link>
                                 </li>
                             );

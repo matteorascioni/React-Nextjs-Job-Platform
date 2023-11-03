@@ -10,6 +10,12 @@ import { useTranslation } from 'next-i18next';
 
 import styles from './Header.module.css';
 
+interface IHeaderItem {
+    id: string;
+    url: string;
+    title: string;
+}
+
 const Header = () => {
     const { t } = useTranslation('home');
     const [toggle, setToggle,] = useState(false);
@@ -43,7 +49,7 @@ const Header = () => {
                     {/* Add the logo here */}
                     <Icon 
                         className={styles.logo}
-                        icon="logo01"
+                        icon="facebook"
                         iconClass="crimson"
                     />
                 </Link>
@@ -72,7 +78,11 @@ const Header = () => {
                 >
                     {/* List */}
                     <ul className={styles.list}>
-                        {t('home:header_section_menu_items', {returnObjects: true}).map((item) => {
+                        {t('home:header_section_menu_items', {returnObjects: true}).map((item: IHeaderItem) => {
+                            if(Array.isArray(item)) {
+                                return null;
+                            }
+                            
                             return (
                                 //List Items
                                 <li

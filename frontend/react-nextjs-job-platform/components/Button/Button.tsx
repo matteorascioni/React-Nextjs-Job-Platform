@@ -17,7 +17,7 @@ const Button = ({
     className,
     onClick,
     children
-}:IButton) => {
+}: IButton) => {
     return (
         <button
             type={type}

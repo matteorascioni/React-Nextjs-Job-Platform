@@ -56,9 +56,9 @@ const WhyUsSection = () => {
                         tagName="h2"
                         headline={t('home:why_us_section_first_card_headline')}
                     >
-                        <Paragraph>
-                            {t('home:why_us_section_first_card_paragraph')}
-                        </Paragraph>
+                        <Paragraph
+                            paragraph={t('home:why_us_section_first_card_paragraph')}
+                        />
                     </DescriptionCard>
                 </div>
 
@@ -78,9 +78,9 @@ const WhyUsSection = () => {
                         tagName="h2"
                         headline={t('home:why_us_section_second_card_headline')}
                     >
-                        <Paragraph>
-                            {t('home:why_us_section_second_card_paragraph')}
-                        </Paragraph>
+                        <Paragraph
+                            paragraph={t('home:why_us_section_second_card_paragraph')}
+                        />
                     </DescriptionCard>
                 </div>
             </div>

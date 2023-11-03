@@ -2,6 +2,7 @@
   "name": "react-nextjs-job-platform",
   "version": "0.1.0",
   "private": true,
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -9,9 +10,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@svgr/webpack": "^8.1.0",
     "i18next": "^23.6.0",
     "next": "14.0.1",
     "next-i18next": "^15.0.0",
+    "next-images": "^1.8.5",
     "react": "^18",
     "react-dom": "^18",
     "react-i18next": "^13.3.1",
