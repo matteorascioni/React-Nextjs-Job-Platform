@@ -27,8 +27,14 @@
 .iconContainer {
     display: flex;
     justify-content: center;
+    border: 1px solid black;
+}
+
+/* Icon */
+.icon {
     max-width: 60px;
     max-height: 60px;
+    border: 1px solid red;
 }
 
 @media (min-width: 768px) {

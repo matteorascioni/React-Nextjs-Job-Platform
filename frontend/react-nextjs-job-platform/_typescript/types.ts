@@ -1,8 +1,7 @@
 export type HeadlineTag = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p';
 
 export type IconClass = | 'black' | 'white' | 'crimson';
-export type Icons = | 'academic'
-| 'apache'
+export type Icons = | 'apache'
 | 'arrow_left'
 | 'aws'
 | 'calendar'
@@ -21,6 +20,7 @@ export type Icons = | 'academic'
 | 'google_login'
 | 'graphql'
 | 'facebook'
+| 'html'
 | 'instagram'
 | 'javascript'
 | 'laravel'

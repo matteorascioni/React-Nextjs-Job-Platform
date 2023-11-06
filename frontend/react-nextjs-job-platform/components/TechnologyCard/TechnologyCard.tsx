@@ -9,18 +9,15 @@ import styles from './TechnologyCard.module.css';
 interface ITechnologyCard {
     headline: string;
     paragraph: string;
-    icon: Icons | null;
+    icon: Icons;
 }
 
-const TechnologyCard = ({
-    headline, 
-    paragraph,
-    icon,
-}:ITechnologyCard) => {
+const TechnologyCard = ({headline, paragraph, icon,}: ITechnologyCard) => {
     return (
         <div className={styles.container}>
             <div className={styles.content}>
                 {/* Headline */}
+                {headline && (
                 <Headline
                     className={`
                         grid-8--mobile
@@ -32,22 +29,27 @@ const TechnologyCard = ({
                     tagName="h3"
                     headline={headline}
                 />
+                )}
 
                 {/* Paragraph */}
-                <Paragraph 
-                    paragraph={paragraph}
-                    className={`
-                        grid-4--desktop-small
-                        grid-3--desktop-large
-                        ${styles.paragraph}
-                    `}
-                />
+                {paragraph && (
+                    <Paragraph 
+                        paragraph={paragraph}
+                        className={`
+                            grid-4--desktop-small
+                            grid-3--desktop-large
+                            ${styles.paragraph}
+                        `}
+                    />
+                )}
             </div>
 
             {/* iconContainer */}
-            <div className={styles.iconContainer}>
-                <Icon icon={icon} />
-            </div>
+            {icon && (
+                <div className={styles.iconContainer}>
+                    <Icon icon={icon} />
+                </div>
+            )}
         </div>
     )
 }

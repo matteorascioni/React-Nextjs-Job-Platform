@@ -44,7 +44,16 @@
 
 /* Discover Platform Link */
 .discoverPlatformLink {
+    display: block;
+    text-align: center;
+    font-weight: var(--heavy);
     margin-bottom: var(--spacing3);
+    padding: var(--spacing) var(--spacing4);
+    border: 1px solid transparent;
+    transition: var(--transition-default-timing) var(--transition-default-easing);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    background-color: var(--crimson-red);
+    color: var(--white);
 }
 
 @media (max-width: 767px) {

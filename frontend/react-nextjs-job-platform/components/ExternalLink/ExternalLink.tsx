@@ -5,7 +5,7 @@ import styles from './ExternalLink.module.css';
 
 interface IExteranlLink {
     layout?: 'iconLink';
-    className: string;
+    className?: string;
     href: string;
     children: React.ReactElement | React.ReactElement[] | string;
 }

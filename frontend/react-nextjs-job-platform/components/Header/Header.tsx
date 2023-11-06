@@ -25,7 +25,7 @@ const Header = () => {
 
     useEffect(() => {
         setToggle(false);
-    }, [router.locale])
+    }, [router.locale]);
 
     return (
         <header className={styles.container}>

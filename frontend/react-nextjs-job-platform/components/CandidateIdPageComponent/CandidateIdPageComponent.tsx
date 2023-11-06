@@ -205,7 +205,7 @@ const CandidatePageComponent = ({
             </div>
 
             {/* Link */}
-            <Link href="/lease-your-dev-app/">
+            <Link href="/profinder/">
                 <a 
                     className={`
                         grid-offset-1--desktop-small

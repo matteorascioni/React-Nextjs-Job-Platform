@@ -238,7 +238,7 @@ const CategoryIdPageComponent = () => {
                                 // src
                                 // alt 
                                 name={item.name}
-                                href={'/lease-your-dev-app/' + item.id}
+                                href={'/profinderapp/' + item.id}
                             />
                         </li>
                     );
@@ -265,7 +265,7 @@ const CategoryIdPageComponent = () => {
                     
                     <Link 
                         className={styles.link} 
-                        href="/lease-your-dev-app/"
+                        href="/profinderapp/"
                     >
                         {/* Arrow Icon */}
                         <Icon 

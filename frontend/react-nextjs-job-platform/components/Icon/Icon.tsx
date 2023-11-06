@@ -85,9 +85,6 @@ const Icon = ({icon, iconClass, className,}: IIcon) => {
             return <GoogleLogin className={classNames} />;
         case 'graphql':
             return <GraphQl className={classNames} />;
-        case 'facebook':
-            return <Facebook className={classNames} />;
-            //@ts-ignore
         case 'html':
             return <Html className={classNames} />;
         case 'instagram':

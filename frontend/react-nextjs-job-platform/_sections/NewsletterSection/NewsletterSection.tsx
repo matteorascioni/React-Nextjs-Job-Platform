@@ -1,7 +1,7 @@
 import React from 'react';
 import Headline from '@components/Headline/Headline';
 import NewsletterInput from '@components/NewsletterInput/NewsletterInput';
-import { useTranslation } from 'next-i18next'
+import { useTranslation } from 'next-i18next';
 
 import styles from './NewsletterSection.module.css';
 

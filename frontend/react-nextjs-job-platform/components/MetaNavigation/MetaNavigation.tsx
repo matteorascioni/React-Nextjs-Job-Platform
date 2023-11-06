@@ -5,7 +5,7 @@ import LanguageSwitcher from '@components/LanguageSwitcher/LanguageSwitcher';
 import styles from './MetaNavigation.module.css';
 
 interface IMetaNavigation {
-    toggleMenu: boolean;
+    toggleMenu?: boolean;
     layout?: 'noButton' | 'buttonRed';
 }
 

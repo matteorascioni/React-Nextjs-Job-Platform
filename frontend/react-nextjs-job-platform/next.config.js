@@ -1,11 +1,4 @@
-/** @type {import('next').NextConfig} */
-// const nextConfig = {
-//   reactStrictMode: true,
-//   swcMinify: true,
-// }
-
-// module.exports = nextConfig
-const { i18n } = require("./next-i18next.config");
+const { i18n } = require('./next-i18next.config')
 
 module.exports = {
     webpack(config) {
@@ -16,6 +9,5 @@ module.exports = {
         return config;
     },
     reactStrictMode: false,
-    swcMinify: true,
     i18n,
 };

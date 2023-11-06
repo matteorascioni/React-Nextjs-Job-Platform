@@ -1,8 +1,8 @@
-import React, { useEffect, useContext } from 'react';
+import React from 'react';
 // import AppContext from 'context/AppContext';
-import {getDefaultUser} from '@helpers/defaults';
-import {useLocalStorage} from '@helpers/use_local_storage';
-import {Get} from '@helpers/fetch_';
+// import {getDefaultUser} from '@helpers/defaults';
+// import {useLocalStorage} from '@helpers/use_local_storage';
+// import {Get} from '@helpers/fetch_';
 import Header from '@components/Header/Header';
 import Footer from '@components/Footer/Footer';
 

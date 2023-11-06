@@ -11,7 +11,7 @@ interface IStageTimedSlider {
 
 const StageTimedSlider = ({items}: IStageTimedSlider) => {
     const renderedItems: any[] = [];
-
+    
     items.map((item) => {
         renderedItems.push(
             <StageTimedSliderSlide

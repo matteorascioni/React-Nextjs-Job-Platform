@@ -6,22 +6,28 @@ import Icon from '@components/Icon/Icon';
 
 import styles from './Footer.module.css';
 
+interface IFooterIconItem {
+    id: string,
+    href: string,
+    icon: string,
+}
+
 const Footer = () => {
     const icons = [
         {
             id: "f1",
             href: 'www.facebook.com',
-            icon: 'facebook',
+            icon: "facebook",
         },
         {
             id: "f2",
             href: 'www.instagram.com',
-            icon: 'instagram',
+            icon: "instagram",
         },
         {
             id: "f3",
             href: 'www.linkedin.com',
-            icon: 'linkedin',
+            icon: "linkedin",
         },
     ];
 
@@ -135,8 +141,10 @@ const Footer = () => {
                             "
                         >
                             {/* Newsletter Input */}
+                            {/** Add translations for this component **/}
                             <NewsletterInput
                                 layout="footer"
+                                placeholder="inserici la tua email" 
                                 paragraph="Iscriviti alla newsletter"
                                 buttonLabel="Iscriviti"
                             />
@@ -151,7 +159,7 @@ const Footer = () => {
                             `}
                         >
                             {/* Icons */}
-                            {icons.map(item => {
+                            {icons.map((item: IFooterIconItem) => {
                                 return(
                                     <ExternalLink 
                                         key={item.id}
@@ -160,6 +168,7 @@ const Footer = () => {
                                         href={item.href}
                                     >
                                         <Icon 
+                                            //@ts-ignore
                                             icon={item.icon}
                                             iconClass="white"
                                         />

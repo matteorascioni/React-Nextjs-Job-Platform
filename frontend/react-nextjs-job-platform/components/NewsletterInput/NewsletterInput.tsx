@@ -5,16 +5,24 @@ import Paragraph from '@components/Paragraph/Paragraph';
 
 import styles from './NewsletterInput.module.css';
 
+interface INewsLetter {
+    layout?: 'footer';
+    paragraph: string;
+    placeholder: string;
+    buttonLabel: string;
+}
+
 const NewsletterInput = ({
     layout,
     paragraph,
     placeholder,
     buttonLabel,
-}) => {
+}: INewsLetter) => {
     return (
         <div className={styles.container}>
             {/* Paragraph */}
             <Paragraph 
+                paragraph={paragraph}
                 className={classNames({
                     ['grid-8--mobile']: true,
                     ['grid-6--tablet']: true,
@@ -24,9 +32,7 @@ const NewsletterInput = ({
                     ['grid-4--desktop-large']: layout === 'footer',
                     [styles.paragraph]: true,
                 })}
-            >
-                {paragraph}
-            </Paragraph>
+            />
 
             {/* Input and Button Container */}
             <div className={styles.inputAndButtonContainer}>

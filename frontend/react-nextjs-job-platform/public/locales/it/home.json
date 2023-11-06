@@ -17,8 +17,8 @@
         },
         {
             "id": "h4",
-            "url": "#leaseyourdeveloper",
-            "title": "Lease Your Dev"
+            "url": "#scoprilapiattaforma",
+            "title": "Scopri la nostra App"
         },
         {
             "id": "h5",
@@ -59,16 +59,14 @@
     "why_us_section_second_card_headline": "Feedback e servizio clienti",
     "why_us_section_second_card_paragraph": "Dedichiamo molto impegno ed energie alla cura del cliente perché per noi, voi, siete la priorità. Ecco perché mensilmente verrete contattati con un email per poter avere la possibiltà di esprimere un feedback su un professionsta Profinder con cui state lavorando, ciò ci permette di mantenere la qualità dei nostri servizi il più efficiente possibile.",
 
-    "lease_your_dev_section_headline": "Lease Your Dev",
-    "lease_your_dev_section_sub_headline": "Che cos'è?",
-    "lease_your_dev_section_first_paragraph": "È un servizio dedicato che ha come obiettivo l'apportare valore alla vostra azienda nel lungo termine.",
-    "lease_your_dev_section_second_paragraph": "Secondo le stime attuali ottenute dalla ricercata fatta dal bundesamt für statistik, lo stipendio medio di un professionista IT Senior in Svizzera è di 120'000 CHF.",
-    "lease_your_dev_section_third_paragraph": "La formula LeaseYourDeveloper consente di ridurre significativamente i costi e di incrementare la produttività nel tuo reparto IT.",
-    "lease_your_dev_section_fourth_paragraph": "Per esempio, immaginate di dover aver bisogno di due professionisti senior, per ampliare i vostro reparto IT, e grazie alla LeaseYourDevPlatform li avete trovati senza fatica. Con DevZone potrete assumerli per 190'000 CHF anziché 240'000 CHF, facendo risparmiare alla vostra azienda 50'000 CHF all'anno.",
-    "lease_your_dev_section_first_description_card_headline": "Come funziona?",
-    "lease_your_dev_section_first_description_card_paragraph": "Dopo che avrete selezionato tutti i professionisti di cui avrete bisogno, direttamente dalla nostra piattaforma avrete la possibilità di prenotare un colloquio conoscitivo totalmente gratuito con i candidati dove sarà presente anche il nostre talent acquisition advisor che si prenderà cura di voi durante tutto l'iter di selezione, in poche parole non sarete mai soli!",
-    "lease_your_dev_section_second_description_card_headline": "Metodo di pagamento",
-    "lease_your_dev_section_second_description_card_paragraph": "Il nostro metodo di pagamento si rileva molto flessibile e vantaggioso per le aziende in quanto con la LeaseYourDev formula, voi state assumendo la DevZone, e non il professionista direttamente, questo consente un metodo di pagamento B2B che la vostra azienda può detrarre al 100%(da verificare). Per noi la soddisfazione e la crescita del cliente è al primo posto, per questo i nostri contratti prevedono che i pagamenti avvengano con cadenza mensile e spalmati nel tempo in maniera tale da farvi risparmiare dal primo mese di incentivare la vostra crescita, poiché se crescete voi cresciamo anche noi!",
+    "discover_app_section_headline": "Scopri la Nostra Piattaforma",
+    "discover_app_section_first_paragraph": "Benvenuti nella nostra piattaforma all'avanguardia! Siamo entusiasti di mostrarti come possiamo aiutarti a raggiungere i tuoi obiettivi. Che tu sia un'azienda in crescita, un professionista indipendente o un'appassionato del nostro settore, c'è tanto da esplorare qui.",
+    "discover_app_section_sub_headline": "Cosa Puoi Aspettarti",
+    "discover_app_section_second_paragraph": "La nostra piattaforma è progettata per offrirti una gamma di strumenti e servizi che ti aiuteranno a superare le sfide quotidiane e a crescere rapidamente. Ecco cosa puoi aspettarti:",
+    "discover_app_section_first_description_card_headline": "Soluzioni su Misura",
+    "discover_app_section_first_description_card_paragraph": "Offriamo soluzioni personalizzate per adattarsi alle tue esigenze specifiche. Che tu abbia bisogno di servizi di consulenza, di un software potente o di risorse per la formazione, siamo qui per te.",
+    "discover_app_section_second_description_card_headline": "Tecnologia all'Avanguardia",
+    "discover_app_section_second_description_card_paragraph": "La nostra piattaforma è alimentata dalle ultime innovazioni tecnologiche. Abbiamo investito in soluzioni all'avanguardia per garantire che tu abbia accesso agli strumenti più efficaci e all'informazione più aggiornata.",
     
     "services_section_headline": "Servizi",
     "services_section_sub_headline": "Ecco tutti i servizi che troverete all'interno della piattaforma.",
@@ -111,7 +109,7 @@
         {   
             "id": "technology1",
             "headline": "Frontend",
-            "stuck": [
+            "technologies": [
                 {
                     "id": "t1",
                     "headline": "HTML5",
@@ -165,7 +163,7 @@
         {
             "id": "technology2",
             "headline": "Backend",
-            "stuck": [
+            "technologies": [
                 {
                     "id": "t8",
                     "headline": "GraphQL",
@@ -208,7 +206,7 @@
         {
             "id": "technology3",
             "headline": "Cloud/DevOps",
-            "stuck": [
+            "technologies": [
                 {
                     "id": "t14",
                     "headline": "Nginx",

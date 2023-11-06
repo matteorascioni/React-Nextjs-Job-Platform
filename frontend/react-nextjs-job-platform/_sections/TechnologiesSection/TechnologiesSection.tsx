@@ -3,9 +3,9 @@ import {classNames} from '@helpers/classes';
 import Headline from '@components/Headline/Headline';
 import TechnologyCard from '@components/TechnologyCard/TechnologyCard';
 import Slider from '@components/Slider/Slider';
-import FormModal from '@components/FormModal/FormModal';
-import { useTranslation } from 'next-i18next';
 import { Icons } from '@typescript/types';
+import Icon from '@components/Icon/Icon';
+import { useTranslation } from 'next-i18next';
 
 import styles from './TechnologiesSection.module.css';
 
@@ -19,7 +19,7 @@ interface IInnerTechnologies{
 interface ITechnologies {
     id: string;
     headline: string;
-    stuck: IInnerTechnologies[];
+    technologies: IInnerTechnologies[];
 }
 
 const TechnologiesSection = () => {
@@ -77,6 +77,7 @@ const TechnologiesSection = () => {
                     if(Array.isArray(item)) {
                         return null;
                     }
+
                     return (
                         <div 
                             key={item.id}
@@ -100,9 +101,10 @@ const TechnologiesSection = () => {
                             )}
 
                             {/* Card  */}
-                            {item.stuck && (
+                            {item.technologies && (
                                 <Slider
-                                    items={item.stuck.map((technology: IInnerTechnologies, index: number) => {
+                                    items={item.technologies.map((technology: IInnerTechnologies, index: number) => {
+                                        console.log('[ITEMS]' + typeof(technology.icon));
                                         return (
                                             <div 
                                                 key={technology.id}
@@ -122,6 +124,9 @@ const TechnologiesSection = () => {
                                                     paragraph={technology.paragraph} 
                                                     icon={technology.icon}
                                                 />
+                                                <div className={styles.container}>
+                                                    <Icon icon={technology.icon} />
+                                                </div>
                                             </div>
                                         )
                                     })}

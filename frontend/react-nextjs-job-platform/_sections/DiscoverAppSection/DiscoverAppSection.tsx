@@ -2,19 +2,17 @@ import React from 'react';
 import Headline from '@components/Headline/Headline';
 import DescriptionCard from '@components/DescriptionCard/DescriptionCard';
 import Paragraph from '@components/Paragraph/Paragraph';
-import ExternalLink from '@components/ExternalLink/ExternalLink';
-import Button from '@components/Button/Button';
 import { useTranslation } from 'next-i18next';
 import Link from 'next/link';
 
-import styles from './LeaseYourDeveloperSection.module.css';
+import styles from './DiscoverAppSection.module.css';
 
-const LeaseYourDeveloperSection = () => {
+const DiscoverAppSection = () => {
     const { t } = useTranslation('home');
-
+    
     return (
         <section 
-            id="leaseyourdeveloper"
+            id="scoprilapiattaforma"
             className={`
                 grid-full-width
                 ${styles.container}
@@ -41,7 +39,7 @@ const LeaseYourDeveloperSection = () => {
                     {/* Headline */}
                     <Headline
                         tagName="h1"
-                        headline={t('home:lease_your_dev_section_headline')}
+                        headline={t('home:discover_app_section_headline')}
                         className={`
                             grid-8--mobile
                             grid-8--tablet
@@ -51,10 +49,16 @@ const LeaseYourDeveloperSection = () => {
                         `}
                     />
 
+                    {/* First Paragraph */}
+                    <Paragraph
+                        paragraph={t('home:discover_app_section_first_paragraph')}
+                        className={styles.paragraph}
+                    />
+
                     {/* Sub Headline */}
                     <Headline
                         tagName="h2"
-                        headline={t('home:lease_your_dev_section_sub_headline')}
+                        headline={t('home:discover_app_section_sub_headline')}
                         className={`
                             grid-8--mobile
                             grid-8--tablet
@@ -64,43 +68,25 @@ const LeaseYourDeveloperSection = () => {
                         `}
                     />
 
-                    {/* Paragraphs */}
-                    {/* First Paragraph */}
-                    <Paragraph
-                        paragraph={t('home:lease_your_dev_section_first_paragraph')}
-                        className={styles.paragraph}
-                    />
-
                     {/* Second Paragraph */}
                     <Paragraph
-                        paragraph={t('home:lease_your_dev_section_second_paragraph')}
-                        className={styles.paragraph}
-                    />
-
-                    {/* External Link */}
-                    <ExternalLink
-                        className={styles.externalLink}
-                        href="https://www.gate.bfs.admin.ch/salarium/public/index.html#/calculation?regionCode=4&nogaId=62&skillLevelCode=31&mgmtLevelCode=1&weeklyHourValue=40&educationCode=1&ageCode=30&workYearsCode=5&companySizeCode=3&month13SalaryCode=1&specialFeesCode=1&hourSalaryCode=0"
-                    >
-                        Bundesamt für statistik
-                    </ExternalLink>
-
-                    {/* Third Paragraph */}
-                    <Paragraph
-                        paragraph={t('home:lease_your_dev_section_third_paragraph')}
-                        className={styles.paragraph}
-                    />
-
-                    {/* Fourth Paragraph */}
-                    <Paragraph
-                        paragraph={t('home:lease_your_dev_section_fourth_paragraph')}
+                        paragraph={t('home:discover_app_section_second_paragraph')}
                         className={styles.paragraph}
                     />
 
                     {/* Discover more button */}
-                    <Link className={styles.discoverPlatformLink} href="/lease-your-dev-app">
-                        {t('common:discover_platform_button')}
-                    </Link>
+                    <div className={`
+                            grid-8--mobile
+                            grid-4--tablet
+                            grid-4--desktop-small
+                            grid-4--desktop-large
+                            ${styles.subHeadline}
+                        `}
+                    >
+                        <Link className={styles.discoverPlatformLink} href="/profinderapp">
+                            {t('common:discover_app_button')}
+                        </Link>
+                    </div>
 
                     {/* Content */}
                     <div className={styles.content}>
@@ -116,10 +102,10 @@ const LeaseYourDeveloperSection = () => {
                             {/* First Description Card */}
                             <DescriptionCard
                                 tagName="h2"
-                                headline={t('home:lease_your_dev_section_first_description_card_headline')}
+                                headline={t('home:discover_app_section_first_description_card_headline')}
                             >
                                 <Paragraph
-                                    paragraph={t('home:lease_your_dev_section_first_description_card_paragraph')}
+                                    paragraph={t('home:discover_app_section_first_description_card_paragraph')}
                                     className={styles.paragraph}
                                 />
                             </DescriptionCard>
@@ -139,10 +125,10 @@ const LeaseYourDeveloperSection = () => {
                             {/* Second Description Card */}
                             <DescriptionCard
                                 tagName="h2"
-                                headline={t('home:lease_your_dev_section_second_description_card_headline')}
+                                headline={t('home:discover_app_section_second_description_card_headline')}
                             >
                                 <Paragraph
-                                    paragraph={t('home:lease_your_dev_section_second_description_card_paragraph')}
+                                    paragraph={t('home:discover_app_section_second_description_card_paragraph')}
                                     className={styles.paragraph}
                                 />
                             </DescriptionCard>
@@ -154,4 +140,4 @@ const LeaseYourDeveloperSection = () => {
     )
 }
 
-export default LeaseYourDeveloperSection;
+export default DiscoverAppSection;

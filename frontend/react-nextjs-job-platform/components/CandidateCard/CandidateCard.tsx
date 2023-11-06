@@ -6,7 +6,6 @@ import Paragraph from '@components/Paragraph/Paragraph';
 
 import styles from './CandidateCard.module.css';
 
-
 interface ICandidateCard {
     src?: string; 
     alt?: string;
