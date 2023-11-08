@@ -1,4 +1,5 @@
 import React from 'react';
+import dynamic from 'next/dynamic'
 // import AppContext from 'context/AppContext';
 // import {getDefaultUser} from '@helpers/defaults';
 // import {useLocalStorage} from '@helpers/use_local_storage';
@@ -11,6 +12,11 @@ import styles from './Layout.module.css';
 interface ILayout {
     children: React.ReactElement | React.ReactElement[];
 }
+
+// Rendering the Header on the client side not on the server
+const DynamicHeader = dynamic(() => import('@components/Header/Header'), {
+    ssr: false,
+})
 
 const Layout = ({ children }: ILayout) => {
 //     const {
@@ -59,11 +65,11 @@ const Layout = ({ children }: ILayout) => {
 
     return (
         <>
-            <Header />
-            <main className={styles.main}>
-                {children}
-            </main>
-            <Footer />
+            <DynamicHeader />
+                <main className={styles.main}>
+                    {children}
+                </main>
+            <Footer/>
         </>
     );
 };

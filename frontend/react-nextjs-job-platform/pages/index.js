@@ -1,3 +1,4 @@
+import React, { Fragment } from 'react';
 import Layout from '@components/Layout/Layout';
 import HomeHeroSection from "@sections/HomeHeroSection/HomeHeroSection";
 import CtaSection from "@sections/CtaSection/CtaSection";
@@ -18,20 +19,30 @@ export async function getStaticProps({ locale }) {
   };
 }
 
-export default function App() {
+const Page = () => {
+  return( 
+      <Fragment>
+        <HomeHeroSection />
+        <CtaSection />
+        <IntroductionSection /> 
+        <NewsletterSection />
+        <WhyUsSection /> 
+        <DiscoverAppSection />
+        <CtaSection />
+        <ServicesSection />
+        <TechnologiesSection />
+        <CtaSection />
+        <FaqSection />  
+      </Fragment>
+  )
+}
+
+Page.getLayout = function getLayout(page) {
   return (
     <Layout>
-      <HomeHeroSection />
-      <CtaSection />
-      <IntroductionSection /> 
-      <NewsletterSection />
-      <WhyUsSection /> 
-      <DiscoverAppSection />
-      <CtaSection />
-      <ServicesSection />
-      <TechnologiesSection />
-      <CtaSection />
-      <FaqSection />  
+      {page}
     </Layout>
-  );
+  )
 }
+
+export default Page;

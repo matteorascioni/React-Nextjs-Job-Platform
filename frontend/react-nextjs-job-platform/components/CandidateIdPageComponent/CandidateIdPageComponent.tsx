@@ -205,22 +205,21 @@ const CandidatePageComponent = ({
             </div>
 
             {/* Link */}
-            <Link href="/profinder/">
-                <a 
-                    className={`
-                        grid-offset-1--desktop-small
-                        grid-offset-2--desktop-large
-                        ${styles.link}
-                    `}
-                >
-                    {/* Arrow Icon */}
-                    <Icon 
-                        icon="arrow_left"
-                        iconClass="black"
-                        className={styles.arrowIcon}
-                    />
-                    Back to home
-                </a>
+            <Link 
+                href="/profinderapp/"
+                className={`
+                    grid-offset-1--desktop-small
+                    grid-offset-2--desktop-large
+                    ${styles.link}
+                `}
+            >
+                {/* Arrow Icon */}
+                <Icon 
+                    icon="arrow_left"
+                    iconClass="black"
+                    className={styles.arrowIcon}
+                />
+                Back to home
             </Link>
         </div>
     );

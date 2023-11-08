@@ -7,6 +7,7 @@ import Icon from '@components/Icon/Icon';
 import {classNames} from '@helpers/classes';
 import {disableScroll} from '@helpers/disableScroll';
 import { useTranslation } from 'next-i18next';
+import dynamic from 'next/dynamic'
 
 import styles from './Header.module.css';
 
@@ -20,6 +21,12 @@ const Header = () => {
     const { t } = useTranslation('home');
     const [toggle, setToggle,] = useState(false);
     const router = useRouter();
+    let flag = false;
+    const menuItems = t('home:header_section_menu_items', { returnObjects: true });
+
+    if(Array.isArray(menuItems)) {
+        flag = true;
+    }
 
     disableScroll(toggle);
 
@@ -78,33 +85,31 @@ const Header = () => {
                 >
                     {/* List */}
                     <ul className={styles.list}>
-                        {t('home:header_section_menu_items', {returnObjects: true}).map((item: IHeaderItem) => {
-                            if(Array.isArray(item)) {
-                                return null;
-                            }
-                            
-                            return (
-                                //List Items
-                                <li
-                                    key={item.id}
-                                    onClick={() => {
-                                        return setToggle(false);
-                                    }}
-                                    className={classNames({
-                                        [styles.listItems]: true,
-                                        [styles.active]:
-                                            'undefined' !== typeof window && item.url === window.location.pathname,
-                                        [styles.transparent]:
-                                            'undefined' !== typeof window && item.url !== window.location.pathname,
-                                    })}
-                                >
-                                    {/* List Links */}
-                                    <Link className={styles.listLinks} href={item.url}>
-                                        {item.title}
-                                    </Link>
-                                </li>
-                            );
-                        })}
+                        {flag && (
+                            menuItems.map((item: IHeaderItem) => { 
+                                return (
+                                    //List Items
+                                    <li
+                                        key={item.id}
+                                        onClick={() => {
+                                            return setToggle(false);
+                                        }}
+                                        className={classNames({
+                                            [styles.listItems]: true,
+                                            [styles.active]:
+                                                'undefined' !== typeof window && item.url === window.location.pathname,
+                                            [styles.transparent]:
+                                                'undefined' !== typeof window && item.url !== window.location.pathname,
+                                        })}
+                                    >
+                                        {/* List Links */}
+                                        <Link className={styles.listLinks} href={item.url}>
+                                            {item.title}
+                                        </Link>
+                                    </li>
+                                );
+                            })
+                        )}
                         {/* Only on Mobile and Tablet */}
                         <li className={styles.onlyOnMobileAndTablet}>
                             <MetaNavigation 

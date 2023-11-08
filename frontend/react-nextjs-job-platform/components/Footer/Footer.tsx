@@ -7,12 +7,14 @@ import Icon from '@components/Icon/Icon';
 import styles from './Footer.module.css';
 
 interface IFooterIconItem {
-    id: string,
-    href: string,
-    icon: string,
+    id: string;
+    href: string;
+    icon: string;
 }
 
 const Footer = () => {
+    const currentDate = new Date();
+    const currentYear = currentDate.getFullYear();
     const icons = [
         {
             id: "f1",
@@ -80,7 +82,7 @@ const Footer = () => {
                         >
                             <li className={styles.contactItem}>
                                 <span>
-                                    01DevZone S.R.L.
+                                    Profinder GmbH
                                 </span>
                             </li> 
                             <li className={styles.contactItem}>
@@ -90,7 +92,7 @@ const Footer = () => {
                             </li> 
                             <li className={styles.contactItem}> 
                                 <span>
-                                    00142, Roma
+                                    Rome
                                 </span>
                             </li> 
                             <li className={styles.contactItem}>
@@ -182,7 +184,7 @@ const Footer = () => {
                 <div className={styles.copyrightContainer}>
                     {/* Copyright Headline */}
                     <span className={styles.copyrightHeadline}>
-                        ©2022 01DevZone S.R.L., All rights reserved
+                        ©{currentYear} Profinder GmbH, All rights reserved
                     </span>
                 </div>
             </div>

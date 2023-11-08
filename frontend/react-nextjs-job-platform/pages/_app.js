@@ -14,8 +14,9 @@ const MyApp = ({ Component, pageProps }) => {
   // const [worker, setWorker] = useState({});
   // const [company, setCompany] = useState({});
   // const [sessionExpired, setSessionExpired] = useState(false);
-
-  return (
+  
+  const getLayout = Component.getLayout || ((page) => page);
+  return getLayout(
     // <AppContext.Provider
     //   value={{
     //     authenticated,
@@ -32,9 +33,9 @@ const MyApp = ({ Component, pageProps }) => {
     //     setSessionExpired,
     //   }}
     // >
-        <Component {...pageProps} />
-    //</AppContext.Provider>
-  );
-};
+      <Component {...pageProps} />
+    // </AppContext.Provider>
+  )
+}
 
 export default appWithTranslation(MyApp);

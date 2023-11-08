@@ -30,6 +30,6 @@
       "@typescript/*": ["./_typescript/*"],
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "pages/[lng]/_app.js", "pages/Layout.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "pages/[lng]/_app.js", "pages/Layout.js", "pages/_app.js", "pages/index.js", "pages/profinderapp/index.js"],
   "exclude": ["node_modules"]
 }

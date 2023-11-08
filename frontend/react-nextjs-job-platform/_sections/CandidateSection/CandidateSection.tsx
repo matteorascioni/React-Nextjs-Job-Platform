@@ -267,7 +267,7 @@ const CandidateSection = ({ headline, }: ICandidateSection) => {
                                         // alt={item.alt} 
                                         name={item.name}
                                         paragraph={item.paragraph}
-                                        href={'/lease-your-dev-app/' + item.id}
+                                        href={'/profinderapp/' + item.id}
                                     />
                                 </div>
                             );
