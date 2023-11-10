@@ -1,15 +1,6 @@
 import React, { Fragment } from 'react';
 import CandidateSection from '@sections/CandidateSection/CandidateSection';
 import AppLayout from '@components/AppLayout/AppLayout';
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-
-export async function getStaticProps({ locale }) {
-    return{
-        props: {
-            ...(await serverSideTranslations(locale, ['home', 'common'])),
-        },
-    };
-}
 
 const Page = () => {
     const DUMMY_ITEMS = [

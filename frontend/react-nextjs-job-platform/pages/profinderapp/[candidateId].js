@@ -1,8 +1,9 @@
 import React from 'react';
+import AppLayout from '@components/AppLayout/AppLayout';
 import { Get } from '@helpers/fetch_';
 import CandidateIdPageComponent from '@components/CandidateIdPageComponent/CandidateIdPageComponent';
 
-const CandidatePage = () => {
+const Page = () => {
     // const [data, setData] = useState({});
     // const {
     //     get: getCandidate,
@@ -106,7 +107,15 @@ const CandidatePage = () => {
             softSkills={DUMMY_ITEMS.softSkills}
             onClick={scheduleCallHandler}
         />
-    );
+    )
 }
 
-export default CandidatePage;
+Page.getLayout = function getLayout(page) {
+    return (
+        <AppLayout>
+            {page}
+        </AppLayout>
+    )
+}
+
+export default Page;
