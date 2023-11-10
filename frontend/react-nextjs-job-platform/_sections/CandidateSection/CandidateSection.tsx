@@ -238,7 +238,7 @@ const CandidateSection = ({ headline, }: ICandidateSection) => {
                 />
             </div>
 
-            {/* Card  */}
+            {/* Cards  */}
             <div 
                 className="
                     grid-12--desktop-small

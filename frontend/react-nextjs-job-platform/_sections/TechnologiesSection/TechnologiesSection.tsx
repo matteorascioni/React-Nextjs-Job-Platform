@@ -104,7 +104,6 @@ const TechnologiesSection = () => {
                             {item.technologies && (
                                 <Slider
                                     items={item.technologies.map((technology: IInnerTechnologies, index: number) => {
-                                        console.log('[ITEMS]' + typeof(technology.icon));
                                         return (
                                             <div 
                                                 key={technology.id}

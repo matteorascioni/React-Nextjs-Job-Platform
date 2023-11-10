@@ -74,7 +74,7 @@ const DiscoverAppSection = () => {
                         className={styles.paragraph}
                     />
 
-                    {/* Discover more button */}
+                    {/* Discover App Link */}
                     <div className={`
                             grid-8--mobile
                             grid-4--tablet

@@ -57,8 +57,16 @@ const IntroductionSection = () => {
                         className={styles.paragraph}
                     />
 
-                    {/* Discover platform button */}
-                    <Link href="/lease-your-dev-app">
+                    {/* Discover app button */}
+                    <Link 
+                        href="/profinderapp"
+                        className={`
+                            grid-4--tablet
+                            grid-4--desktop-small
+                            grid-4--desktop-large
+                            ${styles.discoverPlatformLink}
+                        `} 
+                    >
                         {t('common:discover_platform_button')}
                     </Link>
 
@@ -76,7 +84,7 @@ const IntroductionSection = () => {
                         grid-6--desktop-large
                         ${styles.link}
                     `}
-                    href="#leaseyourdeveloper"
+                    href="#profinderapp"
                 >
                     {t('home:introduction_section_link_label')}
                 </Link>

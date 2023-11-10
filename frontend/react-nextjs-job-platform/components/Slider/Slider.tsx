@@ -319,6 +319,7 @@ const Slider = ({
             index > sliderRailRef.current.children.length - 1 ? 0 : index
         );
     };
+
     useEffect(() => {
         if ('undefined' !== typeof window) {
             window.addEventListener('stage-timed-slider-hold', holdAutoPlay);
@@ -377,6 +378,7 @@ const Slider = ({
                     />
                 </div>
             )}
+
             {
                 <ul
                     ref={bulletLabelsContainer}

@@ -220,7 +220,6 @@ const CategoryIdPageComponent = () => {
             {/* List */}
             <ul className={styles.list}>
                 {items.slice(0, visibility).map((item, index) => {
-
                     return(
                         // List Items
                         <li

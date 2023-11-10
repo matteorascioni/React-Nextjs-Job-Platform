@@ -43,7 +43,7 @@ const WhyUsSection = () => {
                     grid-offset-2--desktop-large
                 "
             >
-                {/* Scalabità e Workflow, for translation:(First Description Card) */}
+                {/* Scalability and Workflow, for translation:(First Description Card) */}
                 <div
                     className="
                         grid-8--mobile
@@ -62,7 +62,7 @@ const WhyUsSection = () => {
                     </DescriptionCard>
                 </div>
 
-                {/* Risposta Istantanea, for translation:(Second Description Card) */}
+                {/* Instant Answer, for translation:(Second Description Card) */}
                 <div
                     className="
                         grid-8--mobile

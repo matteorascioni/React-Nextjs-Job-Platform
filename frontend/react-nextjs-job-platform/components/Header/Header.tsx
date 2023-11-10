@@ -7,7 +7,6 @@ import Icon from '@components/Icon/Icon';
 import {classNames} from '@helpers/classes';
 import {disableScroll} from '@helpers/disableScroll';
 import { useTranslation } from 'next-i18next';
-import dynamic from 'next/dynamic'
 
 import styles from './Header.module.css';
 
@@ -96,10 +95,8 @@ const Header = () => {
                                         }}
                                         className={classNames({
                                             [styles.listItems]: true,
-                                            [styles.active]:
-                                                'undefined' !== typeof window && item.url === window.location.pathname,
-                                            [styles.transparent]:
-                                                'undefined' !== typeof window && item.url !== window.location.pathname,
+                                            [styles.active]: 'undefined' !== typeof window && item.url === window.location.pathname,
+                                            [styles.transparent]: 'undefined' !== typeof window && item.url !== window.location.pathname,
                                         })}
                                     >
                                         {/* List Links */}

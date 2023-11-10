@@ -14,17 +14,41 @@
 }
 
 /* Slider */
-.container :global(.sliderNavigation) {
-    top: -20px;
+.container :global(.sliderNavigationAndControls) {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    padding-top: var(--spacing4);
 }
 
-.container :global(.sliderNavigationItemActive) {
-    background-color: var(--crimson-red);
+/* Buttons in the slider */
+.container :global(.sliderNavigationAndControls) button:first-child,
+.container :global(.sliderNavigationAndControls) button:nth-child(2) {
+    position: initial;
+    display: block;
+    box-shadow: none;
 }
 
-.container :global(.sliderNavigation) > li {
-    border: 1px solid var(--crimson-red);
+.container :global(.sliderNavigationAndControls) button:first-child {
+    margin-right: 0;
 }
+
+.container :global(.sliderNavigationAndControls) button:first-child > svg {
+    margin: 0;
+}
+
+.container :global(.sliderNavigationAndControls) button > svg > path {
+    width: 20px;
+    height: 20px;
+    max-width: 20px;
+    max-height: 20px;
+    fill: var(--crimson-red);
+}
+
+/* Removing the "bullets list" from the screen */
+.container :global(.sliderNavigationAndControls) > ul {
+    display: none;
+}    
 
 @media (min-width: 768px) {
     /* Container */
@@ -52,36 +76,6 @@
     .content [class*='sliderControl'] {
         bottom: 0;
     }
-
-    .container :global(.sliderNavigation) {
-        top: -34px;
-    }
-
-    .container :global(.sliderNavigationAndControls) button {
-        transform: unset;
-        box-shadow: none;
-    }
-
-    .container :global(.sliderNavigationAndControls) button:first-child {
-        right: calc(var(--grid-outer-margin) * 2 + var(--spacing2));
-        padding-right: var(--spacing);
-        padding-left: var(--spacing4);
-    }
-    
-    .container :global(.sliderNavigationAndControls) button:nth-child(2) {
-        right: var(--grid-outer-margin);
-        padding-left: var(--spacing4);
-    }
-
-    .container :global(.sliderNavigationAndControls) button > svg > path {
-        width: 20px;
-        height: 20px;
-        fill: var(--crimson-red);
-    }
-
-    .container :global(.sliderNavigationAndControls) > ul {
-        margin-bottom: var(--spacing4);
-    }    
 }
 
 @media (min-width: 1280px) {
@@ -105,5 +99,18 @@
         justify-content: center;
         padding-left: var(--grid-outer-margin);
         padding-right: var(--grid-outer-margin);
+    }
+    
+    .container :global(.sliderNavigationAndControls) {
+        justify-content: space-between;
+        padding-left: var(--grid-outer-margin);
+        padding-right: var(--grid-outer-margin);
+    }
+
+    /* Buttons in the slider */
+    .container :global(.sliderNavigationAndControls) button:first-child,
+    .container :global(.sliderNavigationAndControls) button:nth-child(2) {
+        padding: 0;
+        padding-top: var(--spacing-0);
     }
 }
