@@ -17,8 +17,8 @@
         },
         {
             "id": "h4",
-            "url": "#leaseyourdeveloper",
-            "title": "Lease Your Dev"
+            "url": "#discoverapp",
+            "title": "Entdecken Sie unsere App"
         },
         {
             "id": "h5",
@@ -59,14 +59,14 @@
     "why_us_section_second_card_headline": "Feedback und Kundendienst ",
     "why_us_section_second_card_paragraph": "Wir widmen der Kundenbetreuung viel Mühe und Energie, denn für uns stehen Sie im Mittelpunkt. Deshalb werden Sie monatlich per E-Mail kontaktiert, damit Sie uns Ihr Feedback zu einem Profinder-Mitarbeiter geben können, mit dem Sie zusammenarbeiten, um die Qualität unserer Dienstleistungen so effizient wie möglich zu halten.",
 
-    "discover_app_section_headline": "Scopri la Nostra Piattaforma",
-    "discover_app_section_first_paragraph": "Benvenuti nella nostra piattaforma all'avanguardia! Siamo entusiasti di mostrarti come possiamo aiutarti a raggiungere i tuoi obiettivi. Che tu sia un'azienda in crescita, un professionista indipendente o un'appassionato del nostro settore, c'è tanto da esplorare qui.",
-    "discover_app_section_sub_headline": "Cosa Puoi Aspettarti",
-    "discover_app_section_second_paragraph": "La nostra piattaforma è progettata per offrirti una gamma di strumenti e servizi che ti aiuteranno a superare le sfide quotidiane e a crescere rapidamente. Ecco cosa puoi aspettarti:",
-    "discover_app_section_first_description_card_headline": "Soluzioni su Misura",
-    "discover_app_section_first_description_card_paragraph": "Offriamo soluzioni personalizzate per adattarsi alle tue esigenze specifiche. Che tu abbia bisogno di servizi di consulenza, di un software potente o di risorse per la formazione, siamo qui per te.",
-    "discover_app_section_second_description_card_headline": "Tecnologia all'Avanguardia",
-    "discover_app_section_second_description_card_paragraph": "La nostra piattaforma è alimentata dalle ultime innovazioni tecnologiche. Abbiamo investito in soluzioni all'avanguardia per garantire che tu abbia accesso agli strumenti più efficaci e all'informazione più aggiornata.",
+    "discover_app_section_headline": "Entdecken Sie unsere Plattform",
+    "discover_app_section_first_paragraph": "Willkommen auf unserer hochmodernen Plattform! Wir freuen uns darauf, Ihnen zu zeigen, wie wir Ihnen helfen können, Ihre Ziele zu erreichen. Ob Sie ein wachsendes Unternehmen, ein Selbständiger oder ein Enthusiast in unserer Branche sind, hier gibt es viel zu entdecken.",
+    "discover_app_section_sub_headline": "Was Sie erwarten können",
+    "discover_app_section_second_paragraph": "Unsere Plattform bietet Ihnen eine Reihe von Tools und Dienstleistungen, die Ihnen helfen, die täglichen Herausforderungen zu meistern und schnell zu wachsen. Hier ist, was Sie erwarten können:",
+    "discover_app_section_first_description_card_headline": "Maßgeschneiderte Lösungen",
+    "discover_app_section_first_description_card_paragraph": "Wir bieten maßgeschneiderte Lösungen für Ihre spezifischen Bedürfnisse. Egal, ob Sie Beratungsleistungen, leistungsstarke Software oder Schulungsressourcen benötigen, wir sind für Sie da.",
+    "discover_app_section_second_description_card_headline": "Hochmoderne Technologie",
+    "discover_app_section_second_description_card_paragraph": "Unsere Plattform stützt sich auf die neuesten technologischen Innovationen. Wir haben in hochmoderne Lösungen investiert, um sicherzustellen, dass Sie Zugang zu den effektivsten Tools und den aktuellsten Informationen haben.",
 
     "services_section_headline": "Dienstleistungen",
     "services_section_sub_headline": "Hier finden Sie alle Dienste, die Sie auf der Plattform finden.",
@@ -104,12 +104,12 @@
     ],
 
     "technology_section_headline": "Technologien",
-    "technology_section_sub_headline": "Die von uns verwendeten Technologien garantieren die beste Leistung auf dem Markt",
+    "technology_section_sub_headline": "Die beliebtesten Technologien",
     "technology_section_cards_content": [
         {   
             "id": "technology1",
             "headline": "Frontend",
-            "stuck": [
+            "technologies": [
                 {
                     "id": "t1",
                     "headline": "HTML5",
@@ -163,7 +163,7 @@
         {
             "id": "technology2",
             "headline": "Backend",
-            "stuck": [
+            "technologies": [
                 {
                     "id": "t8",
                     "headline": "GraphQL",
@@ -206,7 +206,7 @@
         {
             "id": "technology3",
             "headline": "Cloud/DevOps",
-            "stuck": [
+            "technologies": [
                 {
                     "id": "t14",
                     "headline": "Nginx",
@@ -238,6 +238,76 @@
                     "icon": "aws"
                 }
             ]
+        }
+    ], 
+
+    "faq_section_content": [
+        {   
+            "question": "Was ist Software-Outsourcing und was sind seine Vorteile?",
+            "answer": "Software-Outsourcing ist eine Ferndienstleistung, die von Softwareentwicklungsunternehmen angeboten wird. Der Service kann aus Dienstleistungen bestehen, die von der vollständigen Entwicklung von Software oder mobilen Anwendungen über die Designentwicklung und das Testen bis hin zum Projektstart und der Projektunterstützung reichen. Einfach ausgedrückt, geht es beim Software-Outsourcing um die Beauftragung eines Entwicklers oder eines Entwicklungsteams, das außerhalb der Belegschaft Ihres Unternehmens tätig ist, um digitale Produkte für Ihr Unternehmen zu erstellen oder zu verbessern. Sie haben mehr Zeit, sich auf die Entwicklung Ihres Unternehmens zu konzentrieren. Wenn Sie Ihre Projekte an uns auslagern, haben Sie genügend Zeit, sich auf das Wachstum Ihres Unternehmens zu konzentrieren, da wir unsere Dienstleistungen auf die effizienteste Weise für Ihr Unternehmen erbringen, ohne Sie zu sehr in diesen Prozess einzubeziehen.",
+            "subtitles": [
+                {
+                    "subtitle": "Mehr Zeit, um sich auf die Entwicklung Ihres Unternehmens zu konzentrieren",
+                    "content": "Wenn Sie Ihre Projekte an uns auslagern, haben Sie genügend Zeit, sich auf das Wachstum Ihres Unternehmens zu konzentrieren, da wir unsere Dienstleistungen auf die effizienteste Weise für Ihr Unternehmen erbringen, ohne Sie zu sehr in diesen Prozess einzubeziehen.",
+                    "id": "subid1"
+                },
+                {
+                    "subtitle": "Hochqualifiziertes Entwicklungsteam",
+                    "content": "Mit unserem Entwicklerteam stehen Ihnen garantiert sehr erfahrene IT-Fachleute zur Verfügung. Für Ihr Projekt stellen wir nur die Ingenieure ein, die Ihre Projektanforderungen erfüllen.",
+                    "id": "subid2"
+                },
+                {
+                    "subtitle": "Der produktorientierte Ansatz in der Softwareentwicklung",
+                    "content": "Bei der Bereitstellung unserer Softwareentwicklungsdienste konzentrieren wir uns auf Ihre Geschäftsziele und darauf, wie unsere digitalen Lösungen diese erreichen können.",
+                    "id": "subid3"
+                }
+            ],
+            "id": "faq1"
+        },
+        {   
+            "question": "Mit welchen Branchen arbeiten wir zusammen?",
+            "answer": "Um die besten Dienstleistungen auf dem Markt anbieten zu können, konzentrieren wir uns bei unseren Softwareentwicklungs-Outsourcing-Dienstleistungen hauptsächlich auf die Produktentwicklung für verschiedene Primärindustrien: E-Commerce-Entwicklungslösungen, Anwendungsentwicklungslösungen für Unternehmen, Softwareentwicklung für Immobilien Außerdem haben wir eine Menge erfolgreicher Projekte in anderen Industrien wie Unterhaltung, Finanzen, Gastgewerbe, Medien, Bildung und andere.",
+            "id": "faq2"
+        },
+        {   
+            "question": "Wie lange dauert es, mein Projekt zu entwickeln?",
+            "answer": "Zu Beginn nehmen wir die Projektanforderungen des Kunden auf, analysieren sie und teilen Ihnen dann die Ergebnisse der Schätzung mit. Wenn Sie mit den Kosten und der Zeit einverstanden sind, besteht der nächste Schritt darin, einen Projektbericht und ein Angebot zu erstellen. Unser Wirtschaftsanalytiker wird diesen vorbereiten, und wir schicken ihn Ihnen zur Überprüfung zu. Sobald alles fertiggestellt ist, gehen wir mit dem Projekt in die nächste Phase, die Entwicklungsphase.",
+            "id": "faq3"
+        }, 
+        {   
+            "question": "Wie viel kostet es, ein Team zu gründen?",
+            "answer": "Wir wissen, dass der Aufbau eines Teams ein sehr zeit- und kostenintensives Verfahren sein kann. Deshalb ist es eines unserer Hauptziele, dem Kunden alle notwendigen Mittel an die Hand zu geben, um die Ergebnisse zu maximieren und die Kosten zu senken.",
+            "id": "faq4"
+        },
+        {   
+            "question": "Wie kann ich einen Kostenvoranschlag erhalten?",
+            "answer": "Kontaktieren Sie uns und buchen Sie einen Videoanruf über das Kontaktformular, um mehr zu erfahren!",
+            "id": "faq5"
+        },
+        {   
+            "question": "Wie viel Kontrolle habe ich über die Entwicklung meines Projekts?",
+            "answer": "Sie behalten die volle Kontrolle über alle Phasen des Entwicklungslebenszyklus Ihres Projekts. Sie können den Prozess durch regelmäßige Anrufe und Sitzungen überwachen, den Status und die Ausführung jeder Aufgabe verfolgen. In einer Reihe von Sitzungen, die während des gesamten Entwicklungszyklus angesetzt sind, informieren wir Sie über die Fortschritte im Hinblick auf den Projektplan. Wir unterteilen unsere gesamte Arbeit in Sprints, um die Nachverfolgung zu erleichtern und Ihnen die Möglichkeit zu geben, jederzeit Änderungen am Projektumfang vorzunehmen.",
+            "id": "faq6"
+        },
+        {   
+            "question": "Wie garantieren wir den Datenschutz?",
+            "answer": "Wir unterzeichnen NDAs und Vertraulichkeitsvereinbarungen wie von Ihnen gewünscht. Alle unsere Mitarbeiter sind Vollzeitangestellte und an die Vertraulichkeits- und Geheimhaltungsklauseln des Unternehmens gebunden; bei sensiblen Projekten können wir darüber hinaus individuelle NDAs unterzeichnen.",
+            "id": "faq7"
+        },
+        {   
+            "question": "Wie gewährleisten wir die Sicherheit und das Risikomanagement für Ihr Projekt?",
+            "answer": "Wenn Sie Ihre Projekte an unser Unternehmen auslagern, bieten wir nicht nur Softwareentwicklungsdienste an, sondern kümmern uns auch um alle möglichen Compliance- und Sicherheitsfragen. Unsere Spezialisten bewerten alle Arten von Bedrohungen, bevor sie Ihr digitales Produkt erstellen, einschließlich Schwachstellen in Bezug auf den Datenschutz, die Einhaltung von Vorschriften zum geistigen Eigentum, die Integration von Drittanbietern, die Datenverwaltung und vieles mehr. Dank dieses Ansatzes können wir mögliche Risiken bereits in der Prospektionsphase erkennen und geeignete Maßnahmen zu ihrer Vermeidung ergreifen.",
+            "id": "faq8"
+        },
+        {   
+            "question": "Haben wir Unterstützung und/oder Wartung für das Projekt?",
+            "answer": "In der Anfangsphase der Entwicklung reservieren wir bis zu 20 Stunden pro Monat für den Support Ihres Produkts. Unser QA-Ingenieur kann manuelle und automatisierte Tests für Ihr Produkt durchführen. Nach 2 Monaten Projektentwicklung haben Sie Zugang zu den wichtigsten Führungskräften, um alle Probleme zu lösen, die mit Ihrem Produkt auftreten können. Je nach Priorität des Problems kann Ihre Anfrage bei hoher Dringlichkeit innerhalb von 24 Stunden gelöst werden.",
+            "id": "faq9"
+        },
+        {   
+            "question": "Gibt es Zahlungen, wenn das Projekt abgebrochen wird?",
+            "answer": "Nein, es entstehen Ihnen keine Kosten für die Stornierung eines Auftrags, wenn Sie möchten, dass wir die Arbeit einstellen. Sie müssen uns nur einen Monat vor dem Auftrag informieren. Wir sind dann in der Lage, alle laufenden Arbeiten an Ihrem Projekt zu beenden. Falls Sie die Entwicklung Ihres Projekts dringend beenden müssen, müssen Sie für 2 Arbeitswochen mehr bezahlen. Dies wird gemacht, um sicherzustellen, dass wir alle unsere Entwickler Team Vergütung und Boni für die Arbeit an Ihrem Projekt zu decken.",
+            "id": "faq10"
         }
     ]
 }

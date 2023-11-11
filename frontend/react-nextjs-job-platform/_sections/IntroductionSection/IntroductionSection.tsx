@@ -67,7 +67,7 @@ const IntroductionSection = () => {
                             ${styles.discoverPlatformLink}
                         `} 
                     >
-                        {t('common:discover_platform_button')}
+                        {t('common:discover_app_button')}
                     </Link>
 
                     {/* Third Paragraph */}

@@ -17,8 +17,8 @@
         },
         {
             "id": "h4",
-            "url": "#profinderapp",
-            "title": "Louez votre Dev"
+            "url": "#discoverapp",
+            "title": "découvrez notre application"
         },
         {
             "id": "h5",
@@ -46,6 +46,7 @@
     "introduction_section_second_paragraph": "Dans l'espace réservé exclusivement aux entreprises, vous trouverez des informaticiens soigneusement sélectionnés qui répondront à tous vos besoins, tels que la création ou l'extension d'un département informatique.",
     "introduction_section_discover_platform_button": "Découvrez la plateforme",
     "introduction_section_third_paragraph": "Notre objectif est de mettre les besoins du client au premier plan afin d'offrir le service le plus efficace et personnalisé possible, de sorte que nos solutions puissent aider votre entreprise à s'exprimer à 100%.",
+    "introduction_section_link_label": "En savoir plus",
     
     "newsletter_section_headline": "Newsletter",
     "newsletter_section_paragraph": "Inscrivez-vous à notre newsletter pour rester au courant de nos dernières nouvelles !",
@@ -58,14 +59,14 @@
     "why_us_section_second_card_headline": "Commentaires et service à la clientèle",
     "why_us_section_second_card_paragraph": "Nous consacrons beaucoup d'efforts et d'énergie au service à la clientèle car pour nous, vous êtes la priorité. C'est pourquoi vous serez contacté chaque mois par un e-mail afin que vous puissiez donner votre avis sur un professionnel de Profinder avec lequel vous travaillez, ce qui nous permet de maintenir la qualité de nos services aussi efficace que possible.",
 
-    "discover_app_section_headline": "Scopri la Nostra Piattaforma",
-    "discover_app_section_first_paragraph": "Benvenuti nella nostra piattaforma all'avanguardia! Siamo entusiasti di mostrarti come possiamo aiutarti a raggiungere i tuoi obiettivi. Che tu sia un'azienda in crescita, un professionista indipendente o un'appassionato del nostro settore, c'è tanto da esplorare qui.",
-    "discover_app_section_sub_headline": "Cosa Puoi Aspettarti",
-    "discover_app_section_second_paragraph": "La nostra piattaforma è progettata per offrirti una gamma di strumenti e servizi che ti aiuteranno a superare le sfide quotidiane e a crescere rapidamente. Ecco cosa puoi aspettarti:",
-    "discover_app_section_first_description_card_headline": "Soluzioni su Misura",
-    "discover_app_section_first_description_card_paragraph": "Offriamo soluzioni personalizzate per adattarsi alle tue esigenze specifiche. Che tu abbia bisogno di servizi di consulenza, di un software potente o di risorse per la formazione, siamo qui per te.",
-    "discover_app_section_second_description_card_headline": "Tecnologia all'Avanguardia",
-    "discover_app_section_second_description_card_paragraph": "La nostra piattaforma è alimentata dalle ultime innovazioni tecnologiche. Abbiamo investito in soluzioni all'avanguardia per garantire che tu abbia accesso agli strumenti più efficaci e all'informazione più aggiornata.",
+    "discover_app_section_headline": "Découvrez notre plateforme",
+    "discover_app_section_first_paragraph": "Bienvenue sur notre plateforme ultramoderne ! Nous sommes impatients de vous montrer comment nous pouvons vous aider à atteindre vos objectifs. Que vous soyez une entreprise en pleine croissance, un professionnel indépendant ou un passionné de notre secteur, vous trouverez ici de nombreuses possibilités à explorer.",
+    "discover_app_section_sub_headline": "Ce à quoi vous pouvez vous attendre",
+    "discover_app_section_second_paragraph": "Notre plateforme est conçue pour vous offrir une gamme d'outils et de services qui vous aideront à relever les défis quotidiens et à vous développer rapidement. Voici ce à quoi vous pouvez vous attendre :",
+    "discover_app_section_first_description_card_headline": "Solutions personnalisées",
+    "discover_app_section_first_description_card_paragraph": "Nous proposons des solutions personnalisées pour répondre à vos besoins spécifiques. Que vous ayez besoin de services de conseil, de logiciels performants ou de ressources de formation, nous sommes là pour vous.",
+    "discover_app_section_second_description_card_headline": "Une technologie de pointe",
+    "discover_app_section_second_description_card_paragraph": "Notre plateforme est alimentée par les dernières innovations technologiques. Nous avons investi dans des solutions de pointe pour vous garantir l'accès aux outils les plus efficaces et aux informations les plus récentes.",
 
     "services_section_headline": "Services",
     "services_section_sub_headline": "Voici l'ensemble des services que vous trouverez au sein de la plateforme.",
@@ -103,12 +104,12 @@
     ],
 
     "technology_section_headline": "Technologies",
-    "technology_section_sub_headline": "Les technologies que nous utilisons peuvent garantir les meilleures performances du marché.",
+    "technology_section_sub_headline": "Les technologies les plus populaires",
     "technology_section_cards_content": [
         {   
             "id": "technology1",
             "headline": "Frontend",
-            "stuck": [
+            "technologies": [
                 {
                     "id": "t1",
                     "headline": "HTML5",
@@ -162,7 +163,7 @@
         {
             "id": "technology2",
             "headline": "Backend",
-            "stuck": [
+            "technologies": [
                 {
                     "id": "t8",
                     "headline": "GraphQL",
@@ -205,7 +206,7 @@
         {
             "id": "technology3",
             "headline": "Cloud/DevOps",
-            "stuck": [
+            "technologies": [
                 {
                     "id": "t14",
                     "headline": "Nginx",
@@ -237,6 +238,76 @@
                     "icon": "aws"
                 }
             ]
+        }
+    ],
+
+    "faq_section_content": [
+        {   
+            "question": "Qu'est-ce que l'externalisation de logiciels et quels sont ses avantages ?",
+            "answer": "L'externalisation de logiciels est un service à distance fourni par des sociétés de développement de logiciels. Le service peut consister en des services allant du développement complet de logiciels ou d'applications mobiles, au développement de la conception, aux tests, au lancement du projet et à l'assistance au projet. En d'autres termes, les services d'externalisation de logiciels consistent à engager un développeur ou une équipe de développement en dehors du personnel de votre entreprise pour vous aider à créer ou à améliorer certains produits numériques pour votre entreprise. Plus de temps à consacrer au développement de votre entreprise. L'externalisation de vos projets vous permettra de consacrer plus de temps à la croissance de votre entreprise, car nous exécuterons nos services de la manière la plus efficace pour votre entreprise, sans avoir à vous impliquer outre mesure dans le processus.",
+            "subtitles": [
+                {
+                    "subtitle": "Plus de temps pour se concentrer sur le développement des entreprises",
+                    "content": "L'externalisation de vos projets vous permettra de disposer de suffisamment de temps pour vous concentrer sur le développement de votre entreprise, car nous exécutons nos services de la manière la plus efficace possible pour votre entreprise et sans vous impliquer outre mesure dans le processus.",
+                    "id": "subid1"
+                },
+                {
+                    "subtitle": "Une équipe de développement professionnel de haut niveau",
+                    "content": "Avec notre équipe de développeurs, vous avez la garantie de disposer de professionnels de l'informatique très expérimentés. Pour votre projet, nous n'engagerons que des ingénieurs qui répondent aux exigences de votre projet.",
+                    "id": "subid2"
+                },
+                {
+                    "subtitle": "L'approche orientée produit dans le développement de logiciels",
+                    "content": "Dans le cadre de nos services de développement de logiciels, nous concentrons nos efforts sur vos objectifs commerciaux et sur la manière dont nos solutions numériques les atteindront.",
+                    "id": "subid3"
+                }
+            ],
+            "id": "faq1"
+        },
+        {   
+            "question": "Quels sont les secteurs avec lesquels nous travaillons ?",
+            "answer": "Afin de fournir les meilleurs services sur le marché, nous concentrons nos services de développement de logiciels externalisés sur le développement de produits pour plusieurs secteurs primaires : solutions de développement du commerce électronique développement d'applications commerciales développement de logiciels pour le secteur de l'immobilier En outre, nous avons de nombreux projets réussis dans d'autres secteurs tels que le divertissement, la finance, l'hôtellerie, les médias, l'éducation et d'autres.",
+            "id": "faq2"
+        },
+        {   
+            "question": "Combien de temps faut-il pour développer mon projet ?",
+            "answer": "Dans un premier temps, nous analysons les exigences du projet du client, nous les analysons et nous vous informons des résultats de l'estimation. Une fois que vous vous serez mis d'accord sur les coûts et le calendrier, l'étape suivante consistera à créer un rapport de projet et une proposition. Notre analyste commercial le préparera et vous l'enverra pour examen. Une fois que tout est finalisé, le projet passe à l'étape suivante, celle du développement.",
+            "id": "faq3"
+        }, 
+        {   
+            "question": "Combien coûte la création d'une équipe ?",
+            "answer": "Nous savons que la mise en place d'une équipe peut être une procédure très longue et coûteuse. C'est pourquoi l'un de nos principaux objectifs est de fournir au client tous les moyens nécessaires pour maximiser les résultats et réduire les coûts.",
+            "id": "faq4"
+        },
+        {   
+            "question": "Comment obtenir un devis ?",
+            "answer": "Contactez-nous et réservez un appel vidéo via le formulaire de contact pour en savoir plus !",
+            "id": "faq5"
+        },
+        {   
+            "question": "Quel est mon degré de contrôle sur le développement de mon projet ?",
+            "answer": "Le client gardera le contrôle total de toutes les étapes du cycle de vie du projet. Vous serez en mesure de contrôler le processus par des appels téléphoniques et des réunions réguliers, et de suivre le statut et l'avancement de chaque activité. Au cours d'une série de réunions programmées tout au long du cycle de développement, nous vous informerons des progrès réalisés par rapport à la feuille de route du projet. Nous divisons l'ensemble du travail en sprints afin de faciliter le suivi et de vous permettre d'apporter des modifications à la portée du projet à tout moment.",
+            "id": "faq6"
+        },
+        {   
+            "question": "Comment garantissons-nous le respect de la vie privée ?",
+            "answer": "Nous signons des NDA et des accords de confidentialité si le client l'exige. Tous nos collaborateurs sont employés à temps plein et sont liés par les clauses de confidentialité et de non-divulgation de l'entreprise. En outre, pour les projets sensibles, nous pouvons signer des accords de confidentialité personnalisés.",
+            "id": "faq7"
+        },
+        {   
+            "question": "Comment pouvons-nous assurer la sécurité et gérer les risques de votre projet ?",
+            "answer": "Lorsque vous confiez vos projets à notre entreprise, nous ne nous contentons pas de fournir des services de développement de logiciels, mais nous nous occupons également de toutes les questions de conformité et de sécurité. Nos spécialistes évaluent tous les types de menaces avant de créer votre produit numérique, y compris les vulnérabilités en matière de protection de la vie privée, le respect de la propriété intellectuelle, les intégrations de tiers, la gestion des données et bien d'autres choses encore. Cette approche nous permet de découvrir les risques éventuels dès le stade de la prospection et de créer des politiques appropriées pour les prévenir.",
+            "id": "faq8"
+        },
+        {   
+            "question": "Le projet bénéficie-t-il d'une assistance et/ou d'une maintenance ?",
+            "answer": "Dans les premières phases de développement, nous réservons jusqu'à 20 heures par mois à l'assistance de votre produit. Notre ingénieur AQ peut effectuer des tests manuels et automatiques de votre produit. Après deux mois de développement du projet, vous aurez accès au personnel de gestion clé pour résoudre tous les problèmes que vous pourriez rencontrer avec votre produit. En fonction de la priorité du problème, votre demande peut être résolue dans les 24 heures en cas de grande urgence.",
+            "id": "faq9"
+        },
+        {   
+            "question": "Des paiements sont-ils prévus en cas d'annulation du projet ?",
+            "answer": "Non, vous êtes exempté de frais pour toute demande d'annulation au cas où vous devriez interrompre les travaux. Il vous suffit de nous en informer un mois avant les travaux. De cette manière, nous pouvons clôturer tous les travaux en cours sur votre projet. Si vous devez interrompre d'urgence le développement du projet, vous devrez payer deux semaines de travail supplémentaires. Ceci afin d'assurer la couverture totale du salaire et des primes de l'équipe de développeurs pour le travail sur votre projet.",
+            "id": "faq10"
         }
     ]
 }

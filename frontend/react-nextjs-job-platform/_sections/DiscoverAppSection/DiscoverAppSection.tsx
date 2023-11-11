@@ -12,7 +12,7 @@ const DiscoverAppSection = () => {
     
     return (
         <section 
-            id="scoprilapiattaforma"
+            id="discoverapp"
             className={`
                 grid-full-width
                 ${styles.container}

@@ -7,6 +7,7 @@ import Icon from '@components/Icon/Icon';
 import {classNames} from '@helpers/classes';
 import {disableScroll} from '@helpers/disableScroll';
 import { useTranslation } from 'next-i18next';
+import {localeIsArrayChecker} from '@helpers/localeIsArrayChecker';
 
 import styles from './Header.module.css';
 
@@ -20,12 +21,8 @@ const Header = () => {
     const { t } = useTranslation('home');
     const [toggle, setToggle,] = useState(false);
     const router = useRouter();
-    let flag = false;
+    const isMenuItemsArray = localeIsArrayChecker(t('home:header_section_menu_items', { returnObjects: true }))
     const menuItems = t('home:header_section_menu_items', { returnObjects: true });
-
-    if(Array.isArray(menuItems)) {
-        flag = true;
-    }
 
     disableScroll(toggle);
 
@@ -84,7 +81,7 @@ const Header = () => {
                 >
                     {/* List */}
                     <ul className={styles.list}>
-                        {flag && (
+                        {isMenuItemsArray && (
                             menuItems.map((item: IHeaderItem) => { 
                                 return (
                                     //List Items

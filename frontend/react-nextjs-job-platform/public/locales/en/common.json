@@ -1,5 +1,22 @@
 {
     "contact_us_button": "Contact us",
-    "discover_app_button": "Discover the platform",
-    "change_language_dropdown": "Change language"
+    "discover_app_button": "Discover the app",
+    "change_language_dropdown": "Change language",
+
+    "form_label_salutation": "Greeting *:",
+    "form_salutation_placeholder": "Choose a greeting",
+    "form_label_first_name": "Name *:",
+    "form_first_name_placeholder": "Enter your name",
+    "form_label_last_name": "Lastname *:",
+    "form_last_name_placeholder": "Enter your lastname",
+    "form_label_company": "Company *:",
+    "form_company_placeholder": "Enter your company",
+    "form_label_telephone": "Phone number:",
+    "form_telephone_placeholder": "example: +393333333333",
+    "form_label_email": "Email (business) *:",
+    "form_email_placeholder": "Enter your Email (business)",
+    "form_label_textarea": "Your request:",
+    "form_textarea_placheolder": "Enter your request here",
+    "form_label_submit_button": "Send request",
+    "form_label_required_fields": "* Mandatory Fields"
 }

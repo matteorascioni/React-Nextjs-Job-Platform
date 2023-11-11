@@ -17,7 +17,7 @@
         },
         {
             "id": "h4",
-            "url": "#scoprilapiattaforma",
+            "url": "#discoverapp",
             "title": "Scopri la nostra App"
         },
         {
@@ -104,7 +104,7 @@
     ],
 
     "technology_section_headline": "Tecnologie",
-    "technology_section_sub_headline": "Le tecnologie che",
+    "technology_section_sub_headline": "Le tecnologie più richieste",
     "technology_section_cards_content": [
         {   
             "id": "technology1",
@@ -239,6 +239,75 @@
                 }
             ]
         }
+    ],
+
+    "faq_section_content": [
+        {   
+            "question": "Che cos'è l'outsourcing del software e quali sono i suoi vantaggi?",
+            "answer": "L'outsourcing del software è un servizio a distanza fornito da società di sviluppo software. Il servizio può consistere in servizi che vanno dallo sviluppo completo di un software o di un'applicazione mobile, allo sviluppo del design, ai test, al lancio del progetto e al supporto del progetto. In parole povere, i servizi di outsourcing del software consistono nell'assumere uno sviluppatore o un team di sviluppo esterno al personale della vostra azienda per aiutarvi a creare o migliorare alcuni prodotti digitali per la vostra attività. Più tempo per concentrarsi sullo sviluppo della vostra azienda. L'esternalizzazione dei vostri progetti vi garantirà tempo sufficiente per concentrarvi sulla crescita della vostra azienda, in quanto svolgeremo i nostri servizi nel modo più efficiente per la vostra attività, senza dovervi coinvolgere troppo in questo processo.",
+            "subtitles": [
+                {
+                    "subtitle": "Più tempo per concentrarsi sullo sviluppo della propria attività",
+                    "content": "L'esternalizzazione dei vostri progetti vi garantirà tempo sufficiente per concentrarvi sulla crescita della vostra azienda, in quanto svolgiamo i nostri servizi nel modo più efficiente per la vostra attività e senza dovervi coinvolgere troppo in questo processo.",
+                    "id": "subid1"
+                },
+                {
+                    "subtitle": "Team di sviluppo professionale di alto livello",
+                    "content": "Con il nostro team di sviluppatori, avrete la garanzia di avere a disposizione professionisti IT di grande esperienza. Per il vostro progetto, assumeremo solo gli ingegneri che soddisfano i requisiti del vostro progetto.",
+                    "id": "subid2"
+                },
+                {
+                    "subtitle": "L'approccio orientato al prodotto nello sviluppo del software",
+                    "content": "Nel fornire i nostri servizi di sviluppo software, concentriamo i nostri sforzi sui vostri obiettivi aziendali e su come le nostre soluzioni digitali li raggiungeranno.",
+                    "id": "subid3"
+                }
+            ],
+            "id": "faq1"
+        },
+        {   
+            "question": "Con quali settori lavoriamo?",
+            "answer": "Per fornire i migliori servizi sul mercato, concentriamo i nostri servizi di sviluppo software in outsourcing sullo sviluppo di prodotti per diversi settori primari: Soluzioni di sviluppo e-commerce Soluzioni di sviluppo di applicazioni aziendali Sviluppo di software per il settore immobiliare Inoltre, abbiamo molti progetti di successo in altri settori come l'intrattenimento, la finanza, l'ospitalità, l'educazione ai media e altri.",
+            "id": "faq2"
+        },
+        {   
+            "question": "Quanto tempo occorre per sviluppare il mio progetto?",
+            "answer": "Per cominciare, analizziamo i requisiti del progetto del cliente, li analizziamo e poi vi informiamo dei risultati della stima. Una volta che siete d'accordo con i costi e i tempi, il passo successivo sarà quello di creare un documento di relazione sul progetto e una proposta. Il nostro analista aziendale lo preparerà e poi ve lo invierà per la revisione. Una volta che tutto è stato finalizzato, il progetto passa alla fase successiva, quella dello sviluppo.",
+            "id": "faq3"
+        }, 
+        {   
+            "question": "Quanto costa creare una squadra?",
+            "answer": "Sappiamo che la creazione di un team può essere una procedura molto dispendiosa in termini di tempo e denaro. Ecco perché uno dei nostri obiettivi principali è fornire al cliente tutti i mezzi necessari per massimizzare i risultati e ridurre i costi.",
+            "id": "faq4"
+        },
+        {   
+            "question": "Come posso ottenere un preventivo?",
+            "answer": "Contattateci e prenotate una videochiamata attraverso il modulo di contatto per saperne di più!",
+            "id": "faq5"
+        },
+        {   
+            "question": "Quanto controllo ho sullo sviluppo del mio progetto?",
+            "answer": "Il cliente manterrà il pieno controllo su tutte le fasi del ciclo di vita del progetto. Potrete monitorare il processo attraverso telefonate e riunioni regolari, seguire lo stato e l'esercizio di ogni attività. Nell'ambito di una serie di incontri programmati durante l'intero ciclo di sviluppo, vi informeremo dei progressi compiuti rispetto alla roadmap del progetto. Dividiamo l'intero lavoro in sprint per facilitare il monitoraggio e per consentirvi di apportare modifiche all'ambito in qualsiasi fase.",
+            "id": "faq6"
+        },
+        {   
+            "question": "Come garantiamo la privacy?",
+            "answer": "Firmiamo NDA e accordi di riservatezza come richiesto dal cliente. Tutti i nostri dipendenti sono impiegati a tempo pieno e sono vincolati dalle clausole di riservatezza e non divulgazione dell'azienda. Inoltre, per i progetti sensibili, possiamo firmare NDA personalizzati.",
+            "id": "faq7"
+        },
+        {   
+            "question": "Come possiamo garantire la sicurezza e gestire il rischio del vostro progetto?",
+            "answer": "Quando esternalizzate i vostri progetti alla nostra azienda, non solo forniamo servizi di sviluppo software, ma gestiamo anche tutti i possibili problemi di conformità e sicurezza. I nostri specialisti valutano tutti i tipi di minacce prima di creare il vostro prodotto digitale, compresi i punti deboli della privacy, la conformità della proprietà intellettuale, le integrazioni di terze parti, la gestione dei dati e altro ancora. Questo approccio ci permette di scoprire i possibili rischi nella fase di prospezione e di creare politiche adeguate per prevenirli.",
+            "id": "faq8"
+        },
+        {   
+            "question": "Abbiamo assistenza e/o manutenzione sul progetto?",
+            "answer": "Nelle prime fasi di sviluppo, riserviamo fino a 20 ore al mese per il supporto del vostro prodotto. Il nostro ingegnere QA può fornire test manuali e automatici del vostro prodotto. Dopo 2 mesi di sviluppo del progetto, avrete accesso al personale di gestione chiave per risolvere qualsiasi problema che possiate incontrare con il vostro prodotto. A seconda della priorità del problema, la vostra richiesta può essere risolta entro 24 ore in casi di grande urgenza.",
+            "id": "faq9"
+        },
+        {   
+            "question": "Sono previsti pagamenti in caso di annullamento del progetto?",
+            "answer": "No, siete esenti da spese per qualsiasi richiesta di cancellazione nel caso in cui abbiate bisogno di interrompere il lavoro. È sufficiente informarci un mese prima del lavoro. In questo modo, siamo in grado di chiudere tutti i lavori in corso sul vostro progetto. Nel caso in cui abbiate bisogno di chiudere urgentemente lo sviluppo del progetto, dovrete pagare 2 settimane lavorative in più. Questo per garantire la copertura totale della retribuzione e dei bonus del team di sviluppatori per il lavoro sul vostro progetto.",
+            "id": "faq10"
+        }
     ]
 }
-

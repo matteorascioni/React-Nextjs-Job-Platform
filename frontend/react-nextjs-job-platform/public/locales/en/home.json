@@ -17,8 +17,8 @@
         },
         {
             "id": "h4",
-            "url": "#leaseyourdeveloper",
-            "title": "Lease Your Dev"
+            "url": "#discoverapp",
+            "title": "Discover our app"
         },
         {
             "id": "h5",
@@ -59,14 +59,14 @@
     "why_us_section_second_card_headline": "Feedback and customer service",
     "why_us_section_second_card_paragraph": "We devote a lot of effort and energy to customer care because for us, you are the priority. That is why on a monthly basis you will be contacted with an email so that you can have the opportunity to give feedback on a Profinder professional you are working with, this allows us to keep the quality of our services as efficient as possible.",
 
-    "discover_app_section_headline": "Scopri la Nostra Piattaforma",
-    "discover_app_section_first_paragraph": "Benvenuti nella nostra piattaforma all'avanguardia! Siamo entusiasti di mostrarti come possiamo aiutarti a raggiungere i tuoi obiettivi. Che tu sia un'azienda in crescita, un professionista indipendente o un'appassionato del nostro settore, c'è tanto da esplorare qui.",
-    "discover_app_section_sub_headline": "Cosa Puoi Aspettarti",
-    "discover_app_section_second_paragraph": "La nostra piattaforma è progettata per offrirti una gamma di strumenti e servizi che ti aiuteranno a superare le sfide quotidiane e a crescere rapidamente. Ecco cosa puoi aspettarti:",
-    "discover_app_section_first_description_card_headline": "Soluzioni su Misura",
-    "discover_app_section_first_description_card_paragraph": "Offriamo soluzioni personalizzate per adattarsi alle tue esigenze specifiche. Che tu abbia bisogno di servizi di consulenza, di un software potente o di risorse per la formazione, siamo qui per te.",
-    "discover_app_section_second_description_card_headline": "Tecnologia all'Avanguardia",
-    "discover_app_section_second_description_card_paragraph": "La nostra piattaforma è alimentata dalle ultime innovazioni tecnologiche. Abbiamo investito in soluzioni all'avanguardia per garantire che tu abbia accesso agli strumenti più efficaci e all'informazione più aggiornata.",
+    "discover_app_section_headline": "Discover Our Platform",
+    "discover_app_section_first_paragraph": "Welcome to our state-of-the-art platform! We are excited to show you how we can help you reach your goals. Whether you are a growing business, an independent professional or an enthusiast in our industry, there is much to explore here.",
+    "discover_app_section_sub_headline": "What You Can Expect",
+    "discover_app_section_second_paragraph": "Our platform is designed to offer you a range of tools and services that will help you overcome daily challenges and grow rapidly. Here is what you can expect:",
+    "discover_app_section_first_description_card_headline": "Customised Solutions",
+    "discover_app_section_first_description_card_paragraph": "We offer customised solutions to suit your specific needs. Whether you need consulting services, powerful software or training resources, we are here for you.",
+    "discover_app_section_second_description_card_headline": "Cutting-edge technology",
+    "discover_app_section_second_description_card_paragraph": "Our platform is powered by the latest technological innovations. We have invested in cutting-edge solutions to ensure that you have access to the most effective tools and the most up-to-date information.",
 
     "services_section_headline": "Services",
     "services_section_sub_headline": "Here are all the services you will find within the platform.",
@@ -104,12 +104,12 @@
     ],
 
     "technology_section_headline": "Technologies",
-    "technology_section_sub_headline": "The technologies we use can guarantee the best performance on the market",
+    "technology_section_sub_headline": "The most popular technologies",
     "technology_section_cards_content": [
         {   
             "id": "technology1",
             "headline": "Frontend",
-            "stuck": [
+            "technologies": [
                 {
                     "id": "t1",
                     "headline": "HTML5",
@@ -163,7 +163,7 @@
         {
             "id": "technology2",
             "headline": "Backend",
-            "stuck": [
+            "technologies": [
                 {
                     "id": "t8",
                     "headline": "GraphQL",
@@ -206,7 +206,7 @@
         {
             "id": "technology3",
             "headline": "Cloud/DevOps",
-            "stuck": [
+            "technologies": [
                 {
                     "id": "t14",
                     "headline": "Nginx",
@@ -238,6 +238,76 @@
                     "icon": "aws"
                 }
             ]
+        }
+    ],
+
+    "faq_section_content": [
+        {   
+            "question": "What is software outsourcing and what are its advantages?",
+            "answer": "Software outsourcing is a remote service that is provided by software development companies. The service can consist of services ranging from full software or mobile application development, design development, testing, to project launch and project support. So, in the simplest words, software outsourcing services is all about hiring a developer or a development team that is external to your company staff to help create or improve some digital products for your business. More time to stay focuse on the development of your business. Outsourcing your projects to us will grant you enough time to focus on growing your company as we carry out our services in the most efficient way for your business and without the need to involve you too much in this process.",
+            "subtitles": [
+                {
+                    "subtitle": "More time to stay focused on the development of your business",
+                    "content": "Outsourcing your projects to us will grant you enough time to focus on growing your company as we carry out our services in the most efficient way for your business and without the need to involve you too much in this process.",
+                    "id": "subid1"
+                },
+                {
+                    "subtitle": "High Professional Development Team",
+                    "content": "With our developers' team, you are guaranteed of highly experienced IT professionals at your disposal. For your project, we will hire only those engineers who meet your project requirements.",
+                    "id": "subid2"
+                },
+                {
+                    "subtitle": "The product-oriented approach in software development",
+                    "content": "While providing our software development services, we focus our efforts on your business goals and how our digital solutions will meet them.",
+                    "id": "subid3"
+                }
+            ],
+            "id": "faq1"
+        },
+        {   
+            "question": "Which industries do we work with?",
+            "answer": "To provide the best services in the market we mainly focus our software development outsourcing services on product development for several primary industries:E-commerce Development Solutions Company Application Development Solutions Software Development For Real Estate Besides, we have a lot of successful projects in other industries like entertainment, financial, hospitality, media education and other.",
+            "id": "faq2"
+        },
+        {   
+            "question": "How long does it take to develop my project?",
+            "answer": "To start with, we review project requirements from the client, we get them analyzed and then inform you of the estimation results. Once you are fine with the cost and time, the next step would be to create a project report document and a proposal. Our business analyst will prepare this and then we send you the same for review. Once everything has been finalized we would then take the project to the next stage, which is the development stage.",
+            "id": "faq3"
+        }, 
+        {   
+            "question": "How much does it cost to set up a team?",
+            "answer": "We know that setting up a team can be a very time-consuming and costly procedure. That is why one of our main goals is to provide the customer with all the means necessary to maximise results and reduce costs.",
+            "id": "faq4"
+        },
+        {   
+            "question": "How do I get a estimate?",
+            "answer": "Contact us and book a video call through the contact form to find out more!",
+            "id": "faq5"
+        },
+        {   
+            "question": "How much control do I have over the development of my project?",
+            "answer": "You would retain full control over all stages in the development life cycle of your project. You can monitor the process through regular calls and meetings, track the status and exercise of every task. Within a set of meetings scheduled throughout the whole development cycle, we would inform you of the progress in regard to the project roadmap. We divide our entire work into sprints for ease of tracking and so you can make changes in the scope at any stage.",
+            "id": "faq6"
+        },
+        {   
+            "question": "How do we guarantee privacy?",
+            "answer": "We sign NDAs and Confidentiality Agreements as required by you. All our employees are full-time employees and are bound by company Confidentiality and Non-Disclosure clauses.Additionally, for sensitive projects, we can sign custom NDAs.",
+            "id": "faq7"
+        },
+        {   
+            "question": "How do we ensure the security and manage the risk of your project?",
+            "answer": "When you outsource your projects to our company, we not only provide software development services, but also handle all possible compliance and security issues. Our specialists assess all types of threats before creating your digital product, including privacy weaknesses, intellectual property compliance, third-party integrations, data management and more. This approach allows us to discover possible risks at the prospecting stage and create appropriate policies to prevent them.",
+            "id": "faq8"
+        },
+        {   
+            "question": "Do we have support and/or maintenance on the project? ",
+            "answer": "In the early stages of development, we reserve up to 20 hours per month for support of your product. Our QA engineer can provide manual and automated testing of your product. After 2 months of project development, you will have access to key management personnel to solve any problems you may encounter with your product. Depending on the priority of the problem, your request can be resolved within 24 hours in cases of high urgency.",
+            "id": "faq9"
+        },
+        {   
+            "question": "Are there any payments if the project is cancelled? ",
+            "answer": "No, you’re free from charges on any cancellation request in case you need us to stop working on the job. You just need to inform us one month before the job. So, we are able to close all current work on your project. In case you need to close your project development urgently, you will need to pay for 2 working weeks more. That is made to ensure that we fully cover all our developers' team remuneration and bonuses for working on your project.",
+            "id": "faq10"
         }
     ]
 }

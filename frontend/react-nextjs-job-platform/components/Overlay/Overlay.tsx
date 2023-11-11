@@ -3,6 +3,7 @@ import Momentaryinput from './Momentaryinput';
 import Button from '@components/Button/Button';
 import Icon from '@components/Icon/Icon';
 import Portal from '@components/Portal/Portal';
+import { useTranslation } from 'next-i18next';
 
 import styles from './Overlay.module.css';
 
@@ -11,6 +12,8 @@ interface IOvelay {
 }
 
 const Overlay = ({ closeModal }: IOvelay) => {
+    const { t } = useTranslation('common');
+
     return (
         <Portal wrapperId={document.body}>
             <div className={styles.container}>
@@ -73,8 +76,8 @@ const Overlay = ({ closeModal }: IOvelay) => {
                                 "
                             >
                                 <Momentaryinput 
-                                    label="salutation"
-                                    placeholder="Please choose"
+                                    label={t('common:form_label_salutation')}
+                                    placeholder={t('common:form_salutation_placeholder')}
                                 />
                             </div>
                             <div 
@@ -88,8 +91,8 @@ const Overlay = ({ closeModal }: IOvelay) => {
                                 "
                             >
                                 <Momentaryinput 
-                                    label="First name *"
-                                    placeholder="Please fill in"
+                                    label={t('common:form_label_first_name')}
+                                    placeholder={t('common:form_first_name_placeholder')}
                                 />
                             </div>
                         </div>
@@ -102,8 +105,8 @@ const Overlay = ({ closeModal }: IOvelay) => {
                                 "
                             >
                                 <Momentaryinput 
-                                    label="Surname *"
-                                    placeholder="Please fill in"
+                                    label={t('common:form_label_last_name')}
+                                    placeholder={t('common:form_last_name_placeholder')}
                                 />
                             </div>
                             <div 
@@ -117,8 +120,8 @@ const Overlay = ({ closeModal }: IOvelay) => {
                                 "
                             >
                                 <Momentaryinput 
-                                    label="Company *"
-                                    placeholder="name of your company*"
+                                    label={t('common:form_label_company')}
+                                    placeholder={t('common:form_company_placeholder')}
                                 />
                             </div>
                         </div>
@@ -131,8 +134,8 @@ const Overlay = ({ closeModal }: IOvelay) => {
                                 "
                             >
                                 <Momentaryinput 
-                                    label="phone"
-                                    placeholder="+{{prefisso paese}}"
+                                    label={t('common:form_label_telephone')}
+                                    placeholder={t('common:form_telephone_placeholder')}
                                 />
                             </div>
                             <div 
@@ -146,8 +149,8 @@ const Overlay = ({ closeModal }: IOvelay) => {
                                 "
                             >
                                 <Momentaryinput 
-                                    label="Email (business) *"
-                                    placeholder="Your email (business)*"
+                                    label={t('common:form_label_email')}
+                                    placeholder={t('common:form_email_placeholder')}
                                 />
                             </div>
                         </div>
@@ -163,10 +166,10 @@ const Overlay = ({ closeModal }: IOvelay) => {
                             >
                                 {/* Textarea */}
                                 <label className={styles.label}>
-                                    My request*
+                                    {t('common:form_label_textarea')}
                                 </label>
                                 <textarea 
-                                    placeholder="Please describe your request"
+                                    placeholder={t('common:form_textarea_placheolder')}
                                     className={styles.textarea}
                                 >
                                 </textarea>
@@ -191,12 +194,14 @@ const Overlay = ({ closeModal }: IOvelay) => {
                                         type="submit"
                                         layout="red"
                                     >
-                                        Submit Request 
+                                        {t('common:form_label_submit_button')} 
                                     </Button>
                                 </div>
 
                                 {/* Required Fields */}
-                                <span className={styles.requiredFields}>* Required fields</span>
+                                <span className={styles.requiredFields}>
+                                    {t('common:form_label_required_fields')}
+                                </span>
                             </div>
                         </div>
                     </form>

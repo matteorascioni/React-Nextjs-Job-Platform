@@ -2,11 +2,14 @@ import React from 'react';
 import Headline from '@components/Headline/Headline';
 import StageTimedSlider from '@components/StageTimedSlider/StageTimedSlider';
 import { useTranslation } from 'next-i18next';
+import { localeIsArrayChecker } from '@helpers/localeIsArrayChecker';
 
 import styles from './ServicesSection.module.css';
 
 const ServicesSection = () => {
     const { t } = useTranslation('home');
+    const isServicesContentArray = localeIsArrayChecker(t('home:services_content', { returnObjects: true }))
+    const servicesContent = t('home:services_content', { returnObjects: true });
 
     return (
         <section
@@ -51,8 +54,10 @@ const ServicesSection = () => {
                     `}
                 />
             </div>
-            
-            <StageTimedSlider items={t('home:services_content', {returnObjects: true})}/>
+
+            {isServicesContentArray && (
+                <StageTimedSlider items={servicesContent} />
+            )}
         </section>
     );
 };
