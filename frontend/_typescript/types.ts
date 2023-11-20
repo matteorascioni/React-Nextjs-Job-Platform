@@ -33,4 +33,3 @@ export type Icons = | 'apache'
 | 'sql'
 | 'typescript'
 | 'work_experience';
-

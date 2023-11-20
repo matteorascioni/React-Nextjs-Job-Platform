@@ -14,7 +14,7 @@ const FormModal = ({ layout }: IFormModal) => {
     
     if(layout === 'noButton') {
         disableNavigationScroll(isModalOpen)
-    } else if(layout == 'buttonRed') {
+    } else if(layout === 'buttonRed') {
         disableScroll(isModalOpen);
     }
 

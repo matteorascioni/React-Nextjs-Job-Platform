@@ -195,6 +195,7 @@ const CandidatePageComponent = ({
                     layout="red"
                     className={styles.button}
                 >
+                    Schedule a call
                     {/* Schedule a call  */}
                     <Icon 
                         icon="calendar"

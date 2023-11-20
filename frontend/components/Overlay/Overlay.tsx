@@ -14,6 +14,23 @@ interface IOvelay {
 const Overlay = ({ closeModal }: IOvelay) => {
     const { t } = useTranslation('common');
 
+    const onSubmitHandler = () => {
+        let newUser = {
+            name: name,
+        }
+
+        fetch('http://127.0.0.1/8000/register', {
+            method: 'POST',
+            mode: 'cors',
+            credentials: 'include',
+            headers: {
+                'content-type': 'application/json',
+                csrfToken: ''
+            },
+            body: JSON.stringify(newUser)
+        })
+    }
+
     return (
         <Portal wrapperId={document.body}>
             <div className={styles.container}>
@@ -187,7 +204,6 @@ const Overlay = ({ closeModal }: IOvelay) => {
                                     grid-gap--desktop-large
                                 `}
                             >
-
                                 {/* Button Container */}
                                 <div className={styles.buttonContainer}>
                                     <Button
