@@ -31,7 +31,10 @@ const Header = () => {
     }, [router.locale]);
 
     return (
-        <header className={styles.container}>
+        <header 
+            data-testid="test-header"
+            className={styles.container}
+        >
             {/* OnlyFromDesktop */}
             <div className={styles.onlyFromDesktop}>
                 <MetaNavigation />    
@@ -52,7 +55,7 @@ const Header = () => {
                     {/* Add the logo here */}
                     <Icon 
                         className={styles.logo}
-                        icon="facebook"
+                        icon="pro"
                         iconClass="crimson"
                     />
                 </Link>

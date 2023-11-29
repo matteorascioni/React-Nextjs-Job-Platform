@@ -27,6 +27,7 @@ import Linkedin from '@svg/linkedin.svg';
 import Next from '@svg/next.svg';
 import Nginx from '@svg/nginx.svg';
 import NoSql from '@svg/nosql.svg';
+import ProLogo from '@svg/pro.svg';
 import ReactIcon from '@svg/react.svg';
 import Redux from '@svg/redux.svg';
 import Sql from '@svg/sql.svg';
@@ -101,6 +102,8 @@ const Icon = ({icon, iconClass, className,}: IIcon) => {
             return <Nginx className={classNames} />;
         case 'nosql':
             return <NoSql className={classNames} />;
+        case 'pro':
+            return <ProLogo className={classNames} />;
         case 'react':
             return <ReactIcon className={classNames} />;
         case 'redux':

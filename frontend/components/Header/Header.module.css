@@ -20,18 +20,14 @@
 /* logoLink */
 .logoLink {
     line-height: 0;
-    color: var(--crimson-red);
-
-    /* TODO: REMOVE THIS PROPERTIES AND ADD THE REAL LOGO */
-    width: 200px;
+    max-width: 120px;
     height: 100%;
-    border: 1px solid red;
+    color: var(--crimson-red);
 }
-
-/* Logo */
+/* Logo */ 
 .logo {
-    height: 2.4rem;
-    max-height: 2.4rem;
+    width: 100%;
+    max-height: var(--main-navigation-height);
 }
 
 /* Mobile Nav */
@@ -178,11 +174,6 @@
     /* Container */
     .container {
         height: 85px;
-    }
-
-    /* Logo */
-    .logo {
-        height: 3rem;
     }
 
     /* Menu Icon Container */
